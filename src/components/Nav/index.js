@@ -13,9 +13,9 @@ class Nav extends Component {
     }
 
     menuToggle = () => {
-        const current = this.state.isActive;
+        const currentState = this.state.isActive;
         this.setState({
-            isActive: !current
+            isActive: !currentState
         });
         
     }
