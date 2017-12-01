@@ -11,6 +11,7 @@ class App extends Component {
       <div className="app">
         <Nav />
         <Buttom 
+          color="is-primary"
           type="link" 
           href="https://reactjs.org/docs/components-and-props.html" 
           text="React" />

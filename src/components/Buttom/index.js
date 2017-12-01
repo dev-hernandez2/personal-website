@@ -12,7 +12,7 @@ class Buttom extends Component {
             return (
                 <a 
                     href={this.props.href ? this.props.href : ''} 
-                    className="button is-primary">
+                    className={"button " + (this.props.color ? this.props.color : '')}>
                         {this.props.text ? this.props.text : 'Link'}
                 </a>
             );
@@ -20,7 +20,7 @@ class Buttom extends Component {
             return (
                 <button 
                     type="submit" 
-                    className="button is-primary">
+                    className={"button " + (this.props.color ? this.props.color : '')}>
                         {this.props.text ? this.props.text : 'Submit'}
                 </button>
             );
