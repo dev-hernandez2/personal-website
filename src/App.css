@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow:400,600,800|Rozha+One");
+.navbar-main {
+  background-color: #00335d;
+  padding: .50em 0; }
+  .navbar-main .navbar-item, .navbar-main .burger {
+    color: #40D59F;
+    font-size: 1.3em;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600; }
+    .navbar-main .navbar-item:hover, .navbar-main .burger:hover {
+      color: white;
+      background-color: #00335d; }
+  .navbar-main .navbar-menu {
+    background-color: #00335d; }
+    .navbar-main .navbar-menuis-active {
+      background-color: #00335d; }
