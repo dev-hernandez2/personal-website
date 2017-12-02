@@ -8,6 +8,7 @@ class Buttom extends Component {
     }
 
     buttomElement = (props) => {
+        
         if (this.props.type === 'link') {
             return (
                 <a 

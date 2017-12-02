@@ -1,0 +1,19 @@
+.button {
+    border-radius: 0;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    
+    &.p-5{
+        padding: 20px 35px;
+    }
+
+    &.is-primary {
+        background-color: $Highlight !important;
+    }
+
+    &.is-light{
+        background-color: $grey; 
+    }
+}
+

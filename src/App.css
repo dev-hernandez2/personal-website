@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow:400,600,800|Rozha+One");
+body {
+  color: #2E3C40; }
+
+.button {
+  border-radius: 0;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 1em; }
+  .button.p-5 {
+    padding: 20px 35px; }
+  .button.is-primary {
+    background-color: #40D59F !important; }
+  .button.is-light {
+    background-color: #F7F7F6; }
+
 .navbar-main {
   background-color: #00335d;
   padding: .50em 0; }
