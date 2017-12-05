@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 
-class Buttom extends Component {
+class Button extends Component {
     constructor(props){
         super(props);
-        this.buttomElement = this.buttomElement.bind(this)
+        this.buttonElement = this.buttonElement.bind(this)
     }
 
-    buttomElement = (props) => {
+    buttonElement = (props) => {
         
         if (this.props.type === 'link') {
             return (
@@ -32,10 +32,10 @@ class Buttom extends Component {
   render() {
     
     return (
-        this.buttomElement()
+        this.buttonElement()
     );
   }
 }
 
 
-export default  Buttom;
+export default  Button;

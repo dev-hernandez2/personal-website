@@ -4,6 +4,13 @@
 @import 'variables/_var';
 @import '_global';
 //buttom styles
-@import '../../components/Buttom/_styles';
+@import '../../components/Button/_styles';
 //navegator styles
 @import '../../components/Nav/_styles';
+//top header component styles 
+@import '../../components/TopHeader/_styles';
+
+
+//pages componen styles 
+//home
+@import '../../scenes/Home/_styles';
