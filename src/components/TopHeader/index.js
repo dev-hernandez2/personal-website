@@ -1,14 +1,14 @@
 
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 
-import Button from '../Button';
+import Button from '../Button'
 
 
 class TopHeader extends Component {
   constructor(props) {
-    super();
-    this.buttonElement = this.buttonElement.bind(this);
+    super()
+    this.buttonElement = this.buttonElement.bind(this)
   }
   
   buttonElement = (props) => {
@@ -22,7 +22,7 @@ class TopHeader extends Component {
             text={this.props.buttonText}
           />
       
-        );
+        )
     }
   }
 
@@ -43,8 +43,8 @@ class TopHeader extends Component {
           </div>
         </div>
     </section>  
-    );
+    )
   }
 }
 
-export default TopHeader;
+export default TopHeader

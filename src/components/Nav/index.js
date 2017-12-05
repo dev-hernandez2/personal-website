@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 
 class Nav extends Component {
     
     constructor() {
-        super();
+        super()
         this.menuToggle = this.menuToggle.bind(this);
     }
 
@@ -17,13 +17,13 @@ class Nav extends Component {
         const currentState = this.state.isActive;
         this.setState({
             isActive: !currentState
-        });
+        })
         
     }
 
   render() {
 
-      const classActive = (this.state.isActive ? 'is-active' : '');
+      const classActive = (this.state.isActive ? 'is-active' : '')
 
     return (
 
@@ -48,8 +48,8 @@ class Nav extends Component {
                 </div>
             </nav>
 
-    );
+    )
   }
 }
 
-export default Nav;
+export default Nav

@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow:400,600,800|Rozha+One");
+html, body {
+  height: 100%; }
+
 body {
   color: #2E3C40; }
 
@@ -31,35 +34,14 @@ body {
       background-color: #00335d; }
 
 .home-header .hero .hero-body .title {
-  font-size: 10vw; }
+  font-size: 5vw; }
 
 .home-header .hero .hero-body .subtitle {
-  width: 85%;
-  margin: 0 auto;
-  font-size: 5vw; }
+  width: 60%;
+  margin: 0 auto 20px auto;
+  font-size: 2.6vw; }
 
 .home-header .hero .hero-body .title, .home-header .hero .hero-body .subtitle {
   text-align: center;
   font-family: 'Rozha One', serif;
   font-weight: 300; }
-
-.display-flex {
-  align-content: center;
-  display: flex;
-  width: 60%;
-  margin: 40px auto 0 auto; }
-
-@media (min-width: 1200px) {
-  .home-header .hero .hero-body .title {
-    font-size: 7vw; }
-  .home-header .hero .hero-body .subtitle {
-    width: 60%;
-    font-size: 2.8vw; }
-  .display-flex {
-    width: 30%; } }
-
-@media (min-width: 1800px) {
-  .home-header .hero .hero-body .title {
-    font-size: 5vw; }
-  .home-header .hero .hero-body .subtitle {
-    font-size: 2vw; } }

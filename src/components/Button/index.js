@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 
 class Button extends Component {
     constructor(props){
-        super(props);
+        super(props)
         this.buttonElement = this.buttonElement.bind(this)
     }
 
@@ -16,7 +16,7 @@ class Button extends Component {
                     className={"button " + (this.props.color ? this.props.color : '')}>
                         {this.props.text ? this.props.text : 'Link'}
                 </a>
-            );
+            )
         } else if (this.props.type === 'submit') {
             return (
                 <button 
@@ -24,7 +24,7 @@ class Button extends Component {
                     className={"button " + (this.props.color ? this.props.color : '')}>
                         {this.props.text ? this.props.text : 'Submit'}
                 </button>
-            );
+            )
         }
        
       }
@@ -33,9 +33,9 @@ class Button extends Component {
     
     return (
         this.buttonElement()
-    );
+    )
   }
 }
 
 
-export default  Button;
+export default  Button
