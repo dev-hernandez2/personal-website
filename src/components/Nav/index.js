@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
+//logo
+import logo from '../../assets/img/logo.svg'
+
 
 class Nav extends Component {
     
@@ -31,7 +34,7 @@ class Nav extends Component {
                 <div className="container">
                     <div className="navbar-brand">
                         <Link className="navbar-item" to="/">
-                            <img src="" alt="Logo" width="112" height="28"/>
+                            <img src={logo} alt="Logo" width="100%"/>
                         </Link>
                         <div className={"navbar-burger burger "  + classActive } onClick={this.menuToggle} data-target="navbar-menu">
                         <span></span>

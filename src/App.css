@@ -45,3 +45,6 @@ body {
   text-align: center;
   font-family: 'Rozha One', serif;
   font-weight: 300; }
+
+.home-header .has-text-primary {
+  color: #40D59F !important; }
