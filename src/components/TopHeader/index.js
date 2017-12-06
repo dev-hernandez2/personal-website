@@ -1,16 +1,13 @@
 
 import React, { Component } from 'react'
 
-
+//import componets
 import Button from '../Button'
 
 
 class TopHeader extends Component {
-  constructor(props) {
-    super()
-    this.buttonElement = this.buttonElement.bind(this)
-  }
-  
+
+
   buttonElement = (props) => {
     
     if (this.props.HasButton) {
@@ -21,7 +18,6 @@ class TopHeader extends Component {
             href={this.props.buttonHref}
             text={this.props.buttonText}
           />
-      
         )
     }
   }

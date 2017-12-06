@@ -7,11 +7,6 @@ import logo from '../../assets/img/logo.svg'
 
 class Nav extends Component {
     
-    constructor() {
-        super()
-        this.menuToggle = this.menuToggle.bind(this);
-    }
-
     state = {
         isActive: false,
     }
@@ -36,7 +31,7 @@ class Nav extends Component {
                         <Link className="navbar-item" to="/">
                             <img src={logo} alt="Logo" width="100%"/>
                         </Link>
-                        <div className={"navbar-burger burger "  + classActive } onClick={this.menuToggle} data-target="navbar-menu">
+                        <div className={"navbar-burger burger "  + classActive } onClick={ this.menuToggle.bind(this)} data-target="navbar-menu">
                         <span></span>
                         <span></span>
                         <span></span>

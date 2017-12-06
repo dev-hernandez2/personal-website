@@ -2,11 +2,7 @@ import React, { Component } from 'react'
 
 
 class Button extends Component {
-    constructor(props){
-        super(props)
-        this.buttonElement = this.buttonElement.bind(this)
-    }
-
+   
     buttonElement = (props) => {
         
         if (this.props.type === 'link') {
