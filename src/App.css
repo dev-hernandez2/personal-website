@@ -32,19 +32,87 @@ body {
     background-color: #00335d; }
     .navbar-main .navbar-menuis-active {
       background-color: #00335d; }
+  .navbar-main .logo {
+    padding-top: 5px;
+    padding-left: 15px; }
 
-.home-header .hero .hero-body .title {
-  font-size: 5vw; }
+.home-header {
+  padding: 40px 0; }
+  .home-header .hero .hero-body .title {
+    font-size: 10vw; }
+  .home-header .hero .hero-body .subtitle {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    font-size: 6vw; }
+  .home-header .hero .hero-body .title,
+  .home-header .hero .hero-body .subtitle {
+    text-align: center;
+    font-family: 'Rozha One', serif;
+    font-weight: 300; }
+  .home-header .has-text-primary {
+    color: #40D59F !important; }
 
-.home-header .hero .hero-body .subtitle {
-  width: 60%;
-  margin: 0 auto 20px auto;
-  font-size: 2.6vw; }
+@media (min-width: 544px) {
+  .home-header .hero .hero-body .title {
+    font-size: 8vw; }
+  .home-header .hero .hero-body .subtitle {
+    width: 70%;
+    font-size: 4vw; } }
 
-.home-header .hero .hero-body .title, .home-header .hero .hero-body .subtitle {
-  text-align: center;
+@media (min-width: 768px) {
+  .home-header .hero .hero-body .title {
+    font-size: 5vw; }
+  .home-header .hero .hero-body .subtitle {
+    width: 50%;
+    margin: 0 auto 20px auto;
+    font-size: 2.5vw; } }
+
+.bg-section-color-blue {
+  padding-top: 40px;
+  background: #00335d;
+  z-index: -1; }
+
+.color-white {
+  color: #fff; }
+
+.title {
   font-family: 'Rozha One', serif;
   font-weight: 300; }
 
-.home-header .has-text-primary {
-  color: #40D59F !important; }
+.top-line {
+  border: 1px #fff solid;
+  margin: 0 auto 15px auto;
+  width: 50px; }
+
+.footer {
+  background: #40D59F !important; }
+
+.bgtextSection {
+  color: #05233C; }
+
+.section-area {
+  position: relative; }
+  .section-area .section-bg-text {
+    position: absolute;
+    left: 80px;
+    top: 80px;
+    z-index: -2;
+    font-family: 'Rozha One', serif;
+    font-weight: 300;
+    font-size: 12em; }
+    .section-area .section-bg-text p:last-child {
+      margin-top: -100px; }
+  .section-area .row-m {
+    margin: 60px 0 100px 0; }
+  .section-area .what-ido-div {
+    margin: 40px 0 0 0; }
+    .section-area .what-ido-div h3,
+    .section-area .what-ido-div p {
+      color: #fff;
+      font-family: 'Barlow', sans-serif; }
+    .section-area .what-ido-div h3 {
+      font-weight: 600;
+      font-size: 1.5em;
+      margin-bottom: 30px; }
+    .section-area .what-ido-div p {
+      font-size: 1.3em; }

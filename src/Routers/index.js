@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 //component
 import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 
 //views
-import Home from '../scenes/Home'
+import Home from '../views/Home'
+import Error404 from '../views/Error/404'
 
 class Routers extends Component {
   render() {
@@ -13,16 +15,17 @@ class Routers extends Component {
       <Router>
         <div>
            <Nav />
-            <div className="container">
+            
               <Switch>
                   <Route exact path="/" component={Home}/>
                   {/*  
                     <Route path="/about" component={About}/>
                     <Route path="/blog" component={Blog}/>
-                    <Route component={Error404}/>
-                  */}  
+                  */} 
+                  <Route component={Error404}/> 
               </Switch>
-            </div>
+            
+            <Footer />
           </div>
       </Router>
       

@@ -28,8 +28,8 @@ class Nav extends Component {
             <nav className="navbar is-transparent navbar-main">
                 <div className="container">
                     <div className="navbar-brand">
-                        <Link className="navbar-item" to="/">
-                            <img src={logo} alt="Logo" width="100%"/>
+                        <Link className="logo" to="/">
+                            <img src={logo} alt="Logo" width="50"/>
                         </Link>
                         <div className={"navbar-burger burger "  + classActive } onClick={ this.menuToggle.bind(this)} data-target="navbar-menu">
                         <span></span>
@@ -38,10 +38,10 @@ class Nav extends Component {
                         </div>
                     </div>
                     <div id="navbar-menu" className={"navbar-menu " + classActive }>
-                    <div className="navbar-end">
-                        <Link className="navbar-item" to="/about">About</Link>
-                        <Link className="navbar-item" to="/blog">Blog</Link>
-                    </div>
+                        <div className="navbar-end">
+                            <Link className="navbar-item" to="/about">About</Link>
+                            <Link className="navbar-item" to="/blog">Blog</Link>
+                        </div>
                     </div>
                 </div>
             </nav>
