@@ -1,0 +1,25 @@
+.section-area {
+    position: relative;
+    .section-bg-text {
+        position: absolute;
+        z-index: -2;
+        font-family: 'Rozha One', serif;
+        font-weight: 300;
+        font-size: 9em;
+        p:last-child {
+            margin-top: -100px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .section-area {
+        .section-bg-text {
+            
+            font-size: 12em;
+            p:last-child {
+                margin-top: -100px;
+            }
+        }
+    }
+}

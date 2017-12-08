@@ -3,7 +3,7 @@ import {Helmet} from "react-helmet"
 
 import TopHeader from '../../components/TopHeader'
 import WhatIDo from './WhatIDo'
-
+import Project from './Project'
 
 
 class Home extends Component {
@@ -17,6 +17,7 @@ class Home extends Component {
       </div>
     )
   }
+  
   render() {
     return (
       <div>
@@ -40,7 +41,7 @@ class Home extends Component {
         </div>
 
         <WhatIDo />        
-
+        <Project />
       </div>
     )
   }

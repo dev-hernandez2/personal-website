@@ -65,6 +65,10 @@
 .color-white {
     color: #fff;
 }
+.color-regular {
+    color: $typeColor;
+}
+
 
 .title {
     font-family: 'Rozha One', serif;
@@ -75,6 +79,9 @@
     border: 1px #fff solid;
     margin: 0 auto 15px auto;
     width: 50px;
+    &.top-primary {
+        border: 1px $Highlight solid;
+    }
 }
 
 .footer {
@@ -83,22 +90,28 @@
 
 .bgtextSection {
     color: $textBg;
+    left: 30px;
+    top: 80px;
+}
+.bgtextSectionProject {
+    color: #F3F4F5;
+    left: 30px;
+    top: 100px;
 }
 
-.section-area {
-    position: relative;
-    .section-bg-text {
-        position: absolute;
-        left: 80px;
-        top: 80px;
-        z-index: -2;
-        font-family: 'Rozha One', serif;
-        font-weight: 300;
-        font-size: 12em;
-        p:last-child {
-            margin-top: -100px;
+@media (min-width: 768px) {
+    .section-area {
+        .bgtextSectionProject {
+            left: 30px;
+            top: 110px;
+        
+            p:last-child {
+                margin-top: -100px;
+            }
         }
     }
+}
+.section-area {
     .row-m {
         margin: 60px 0 100px 0;
     }
@@ -117,5 +130,34 @@
         p {
             font-size: 1.3em;
         }
+    }
+}
+
+.section-area {
+    .row-m {
+        margin: 100px 0 100px 0;
+    }
+    .how-do-div {
+        h3, h4, 
+        p {
+            color: $typeColor;
+            font-family: 'Barlow', sans-serif;
+        }
+        h3 {
+            font-weight: 600;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        p, .do-tch {
+            font-size: 1.3em;
+        }
+        p {
+            margin-left: 20px;
+        }
+
+        .do-tch{
+            color: $Highlight;
+        }
+
     }
 }

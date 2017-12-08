@@ -26,7 +26,7 @@ class WhatIDo extends Component {
           textColor="bgtextSection"
          >
             <SectionTitle 
-              title="I code your ideas to life."
+              title="I code your ideas to life"
               textColor="title is-3 color-white"
              />
 

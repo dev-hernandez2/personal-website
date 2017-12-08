@@ -36,6 +36,23 @@ body {
     padding-top: 5px;
     padding-left: 15px; }
 
+.section-area {
+  position: relative; }
+  .section-area .section-bg-text {
+    position: absolute;
+    z-index: -2;
+    font-family: 'Rozha One', serif;
+    font-weight: 300;
+    font-size: 9em; }
+    .section-area .section-bg-text p:last-child {
+      margin-top: -100px; }
+
+@media (min-width: 768px) {
+  .section-area .section-bg-text {
+    font-size: 12em; }
+    .section-area .section-bg-text p:last-child {
+      margin-top: -100px; } }
+
 .home-header {
   padding: 40px 0; }
   .home-header .hero .hero-body .title {
@@ -75,6 +92,9 @@ body {
 .color-white {
   color: #fff; }
 
+.color-regular {
+  color: #2E3C40; }
+
 .title {
   font-family: 'Rozha One', serif;
   font-weight: 300; }
@@ -83,36 +103,63 @@ body {
   border: 1px #fff solid;
   margin: 0 auto 15px auto;
   width: 50px; }
+  .top-line.top-primary {
+    border: 1px #40D59F solid; }
 
 .footer {
   background: #40D59F !important; }
 
 .bgtextSection {
-  color: #05233C; }
+  color: #05233C;
+  left: 30px;
+  top: 80px; }
 
-.section-area {
-  position: relative; }
-  .section-area .section-bg-text {
-    position: absolute;
-    left: 80px;
-    top: 80px;
-    z-index: -2;
-    font-family: 'Rozha One', serif;
-    font-weight: 300;
-    font-size: 12em; }
-    .section-area .section-bg-text p:last-child {
-      margin-top: -100px; }
-  .section-area .row-m {
-    margin: 60px 0 100px 0; }
-  .section-area .what-ido-div {
-    margin: 40px 0 0 0; }
-    .section-area .what-ido-div h3,
-    .section-area .what-ido-div p {
-      color: #fff;
-      font-family: 'Barlow', sans-serif; }
-    .section-area .what-ido-div h3 {
-      font-weight: 600;
-      font-size: 1.5em;
-      margin-bottom: 30px; }
-    .section-area .what-ido-div p {
-      font-size: 1.3em; }
+.bgtextSectionProject {
+  color: #F3F4F5;
+  left: 30px;
+  top: 100px; }
+
+@media (min-width: 768px) {
+  .section-area .bgtextSectionProject {
+    left: 30px;
+    top: 110px; }
+    .section-area .bgtextSectionProject p:last-child {
+      margin-top: -100px; } }
+
+.section-area .row-m {
+  margin: 60px 0 100px 0; }
+
+.section-area .what-ido-div {
+  margin: 40px 0 0 0; }
+  .section-area .what-ido-div h3,
+  .section-area .what-ido-div p {
+    color: #fff;
+    font-family: 'Barlow', sans-serif; }
+  .section-area .what-ido-div h3 {
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 30px; }
+  .section-area .what-ido-div p {
+    font-size: 1.3em; }
+
+.section-area .row-m {
+  margin: 100px 0 100px 0; }
+
+.section-area .how-do-div h3, .section-area .how-do-div h4,
+.section-area .how-do-div p {
+  color: #2E3C40;
+  font-family: 'Barlow', sans-serif; }
+
+.section-area .how-do-div h3 {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 10px; }
+
+.section-area .how-do-div p, .section-area .how-do-div .do-tch {
+  font-size: 1.3em; }
+
+.section-area .how-do-div p {
+  margin-left: 20px; }
+
+.section-area .how-do-div .do-tch {
+  color: #40D59F; }
