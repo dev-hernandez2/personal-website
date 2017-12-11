@@ -1,17 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 
 
 
-class Column extends Component {
-
-  render() {
-    return (
-      <div className={"column " + (this.props.size ? this.props.size : '')}>
-        {this.props.children}
+const Column = props =>  (
+      <div className={"column " + (props.size ? props.size : '')}>
+        {props.children}
       </div>
        
     )
-  }
-}
+
 export default Column

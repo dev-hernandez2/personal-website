@@ -6,6 +6,11 @@ import Row from '../../components/Grids/Row'
 import Column from '../../components/Grids/Column'
 
 import projects from '../../services/data/projects'
+//import componets
+import Button from '../../components/Button'
+
+//test img
+import images from '../../assets/img/dummy.jpg'
 
 
 class WhatIDo extends Component {
@@ -19,32 +24,61 @@ class WhatIDo extends Component {
     return(
       <div>
       <p> How I</p>
-      <p> Do IT</p>
+      <p> Do It</p>
       </div>
     )
   }
 
   render() {
     const project = projects.map(project => {
+     
         return (
           <Row  key={project.id} display="is-mobile"  >
-            <Column size="is-11 is-offset-1" >
-                <div className="how-do-div">
-                <h3>{project.title}</h3>
-                <h4 className="do-tch">{project.do}</h4>
-                <p>
-                  {project.description}
-                </p>
-                </div>
+            <Column size="is-12 is-offset-1" >
+                <Row display="how-do-div">
+                {(()=>{
+                  if(project.position === 'left') {
+                    return (
+                      <Column >
+                        <img className=""  src={images} alt="" />
+                      </Column>
+                    )
+                  }
+                 })()}
+                  <Column size="project-info">
+                    <h3>{project.title}</h3>
+                    <h4 className="do-tch">{project.do}</h4>
+                    <p>
+                      {project.description}
+                    </p>
+                    <Button
+                    color=" is-primary btn-project hvr-shadow"
+                    type="link" 
+                    href="#"
+                    text="See Case Study"
+                  />
+                  </Column>
+               {(()=>{
+                if(project.position === 'right') {
+                  return (
+                    <Column >
+                      <img className=""  src={images} alt="" />
+                    </Column>
+                  )
+                }
+              })()}
+                  
+                </Row>
             </Column>
           </Row>
         )
+        
     })
     return (
        
       <div>
         <Section
-          backgroundColor=""
+          backgroundColor="bg-section-color-white"
           textBg={this.getDo()}
           textColor="bgtextSectionProject"
          >

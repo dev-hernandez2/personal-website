@@ -8,21 +8,19 @@ import Column from '../../components/Grids/Column'
 
 class WhatIDo extends Component {
 
-  getDo = () => {
-    return(
+  
+  render() {
+    const WhatIDoBg = (
       <div>
       <p> what</p>
       <p> I Do</p>
       </div>
     )
-  }
-  
-  render() {
     return (
       <div>
         <Section
           backgroundColor="bg-section-color-blue"
-          textBg={this.getDo()}
+          textBg={WhatIDoBg}
           textColor="bgtextSection"
          >
             <SectionTitle 

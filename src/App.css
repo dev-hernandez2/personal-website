@@ -44,7 +44,7 @@ body {
     font-family: 'Rozha One', serif;
     font-weight: 300;
     font-size: 9em; }
-    .section-area .section-bg-text p:last-child {
+    .section-area .section-bg-text p:nth-child(2), .section-area .section-bg-text p:nth-child(3) {
       margin-top: -100px; }
 
 @media (min-width: 768px) {
@@ -52,6 +52,30 @@ body {
     font-size: 12em; }
     .section-area .section-bg-text p:last-child {
       margin-top: -100px; } }
+
+.box-contact {
+  border: 1px solid #40D59F !important;
+  margin-bottom: -250px;
+  padding-bottom: 45px; }
+  .box-contact .contact-btn {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 45px; }
+  .box-contact .input, .box-contact .textarea {
+    border: 1px solid #40D59F !important; }
+  .box-contact .field {
+    margin-top: 45px; }
+
+.bgtextSectionContact {
+  color: #fff;
+  left: 30px;
+  top: 100px; }
 
 .home-header {
   padding: 40px 0; }
@@ -145,21 +169,46 @@ body {
 .section-area .row-m {
   margin: 100px 0 100px 0; }
 
-.section-area .how-do-div h3, .section-area .how-do-div h4,
-.section-area .how-do-div p {
-  color: #2E3C40;
-  font-family: 'Barlow', sans-serif; }
+.section-area .how-do-div .project-info {
+  margin: 50px 0 30px 0; }
+  .section-area .how-do-div .project-info h3,
+  .section-area .how-do-div .project-info h4,
+  .section-area .how-do-div .project-info p {
+    color: #2E3C40;
+    font-family: 'Barlow', sans-serif; }
+  .section-area .how-do-div .project-info h3 {
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-bottom: 10px; }
+  .section-area .how-do-div .project-info p,
+  .section-area .how-do-div .project-info .do-tch {
+    font-size: 1.3em; }
+  .section-area .how-do-div .project-info p {
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: 25px; }
+  .section-area .how-do-div .project-info .do-tch {
+    color: #40D59F; }
+  .section-area .how-do-div .project-info .btn-project {
+    margin-left: 25px; }
 
-.section-area .how-do-div h3 {
-  font-weight: 600;
-  font-size: 1.5em;
-  margin-bottom: 10px; }
+.section-area .how-do-div img {
+  display: none;
+  margin-top: 90px; }
 
-.section-area .how-do-div p, .section-area .how-do-div .do-tch {
-  font-size: 1.3em; }
+@media (min-width: 768px) {
+  .section-area .row-m {
+    margin: 100px 0 100px 0; }
+  .section-area .how-do-div img {
+    display: block;
+    margin-top: 90px; } }
 
-.section-area .how-do-div p {
-  margin-left: 20px; }
+.bg-section-color-grey {
+  background-color: #F7F7F6;
+  padding-top: 40px;
+  z-index: 1; }
 
-.section-area .how-do-div .do-tch {
-  color: #40D59F; }
+.bg-section-color-white {
+  background-color: #fff;
+  padding-top: 40px;
+  z-index: 1; }

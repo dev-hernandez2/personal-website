@@ -1,20 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 
 
 
-class SectionTitle extends Component {
-
-  render() {
-    return (
-      <div className={"has-text-centered " + (this.props.display ? this.props.display : '')}>
-        <div className={"top-line " + (this.props.topLineColor ? this.props.topLineColor : '' )}>
+const SectionTitle = props => (
+      <div className={"has-text-centered " + (props.display ? props.display : '')}>
+        <div className={"top-line " + (props.topLineColor ? props.topLineColor : '' )}>
         </div>
-
-        <h2 className={this.props.textColor}>{this.props.title}</h2>
-      </div>
-       
-    )
-  }
-}
+        <h2 className={props.textColor}>{props.title}</h2>
+      </div>     
+ )
 export default SectionTitle

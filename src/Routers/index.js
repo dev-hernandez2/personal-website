@@ -9,6 +9,9 @@ import Footer from '../components/Footer'
 import Home from '../views/Home'
 import Error404 from '../views/Error/404'
 
+const About  = () => <h1> About </h1>
+const Blog   = () => <h1> Blog </h1>
+
 class Routers extends Component {
   render() {
     return (
@@ -18,10 +21,8 @@ class Routers extends Component {
             
               <Switch>
                   <Route exact path="/" component={Home}/>
-                  {/*  
-                    <Route path="/about" component={About}/>
-                    <Route path="/blog" component={Blog}/>
-                  */} 
+                  <Route path="/about" component={About}/>
+                  <Route path="/blog" component={Blog}/>
                   <Route component={Error404}/> 
               </Switch>
             

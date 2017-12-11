@@ -5,29 +5,33 @@ export default [
         id: uuidv1() ,
         title: 'StayTune.tv',
         do: 'Back-end in Laravel',
-        description: 'lorem mas lorem mas lorem',
-        image: 'http//image.com/image.jpg'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+        image: 'http//image.com/image.jpg',
+        position: 'right'
     },
     {
         id: uuidv1() ,
         title: 'StayTune.tv',
         do: 'Back-end in Laravel',
-        description: 'lorem mas lorem mas lorem',
-        image: 'http//image.com/image.jpg'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+        image: 'http//image.com/image.jpg',
+        position: 'left'
     },
     {
         id: uuidv1() ,
         title: 'StayTune.tv',
         do: 'Back-end in Laravel',
-        description: 'lorem mas lorem mas lorem',
-        image: 'http//image.com/image.jpg'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+        image: 'http//image.com/image.jpg',
+        position: 'right'
     },
     {
         id: uuidv1() ,
         title: 'StayTune.tv',
         do: 'Back-end in Laravel',
-        description: 'lorem mas lorem mas lorem',
-        image: 'http//image.com/image.jpg'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+        image: 'http//image.com/image.jpg',
+        position: 'left'
     },
    
 ]

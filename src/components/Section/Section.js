@@ -1,22 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 
 
 
-class Section extends Component {
-
-  render() {
-    return (
-    <section className={"section-area " + (this.props.backgroundColor ? this.props.backgroundColor : '')}>
-        <div className={"section-bg-text " + (this.props.textColor ? this.props.textColor : '')}>
-            {this.props.textBg}
+const Section = props => (
+    <section className={"section-area " + (props.backgroundColor ? props.backgroundColor : '')}>
+        <div className={"section-bg-text " + (props.textColor ? props.textColor : '')}>
+            {props.textBg}
         </div>
         <div className="section container">
-        
-            {this.props.children}
+            {props.children}
         </div>
     </section>
-    )
-  }
-}
+)
 export default Section

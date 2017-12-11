@@ -65,10 +65,10 @@
 .color-white {
     color: #fff;
 }
+
 .color-regular {
     color: $typeColor;
 }
-
 
 .title {
     font-family: 'Rozha One', serif;
@@ -84,6 +84,7 @@
     }
 }
 
+//this not belong to this file is belong to Footer/_styles.scss
 .footer {
     background: $Highlight !important;
 }
@@ -93,6 +94,7 @@
     left: 30px;
     top: 80px;
 }
+
 .bgtextSectionProject {
     color: #F3F4F5;
     left: 30px;
@@ -104,13 +106,13 @@
         .bgtextSectionProject {
             left: 30px;
             top: 110px;
-        
             p:last-child {
                 margin-top: -100px;
             }
         }
     }
 }
+
 .section-area {
     .row-m {
         margin: 60px 0 100px 0;
@@ -138,26 +140,64 @@
         margin: 100px 0 100px 0;
     }
     .how-do-div {
-        h3, h4, 
-        p {
-            color: $typeColor;
-            font-family: 'Barlow', sans-serif;
+        .project-info {
+            margin: 50px 0 30px 0;
+            h3,
+            h4,
+            p {
+                color: $typeColor;
+                font-family: 'Barlow', sans-serif;
+            }
+            h3 {
+                font-weight: 900;
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+            p,
+            .do-tch {
+                font-size: 1.3em;
+            }
+            p {
+                margin-bottom: 20px;
+                width: 80%;
+                margin-left: 25px;
+            }
+            .do-tch {
+                color: $Highlight;
+            }
+            .btn-project {
+                margin-left: 25px;
+            }
         }
-        h3 {
-            font-weight: 600;
-            font-size: 1.5em;
-            margin-bottom: 10px;
+        img {
+            display: none;
+            margin-top: 90px;
         }
-        p, .do-tch {
-            font-size: 1.3em;
-        }
-        p {
-            margin-left: 20px;
-        }
-
-        .do-tch{
-            color: $Highlight;
-        }
-
     }
+}
+
+@media (min-width: 768px) {
+    .section-area {
+        .row-m {
+            margin: 100px 0 100px 0;
+        }
+        .how-do-div {
+            img {
+                display: block;
+                margin-top: 90px;
+            }
+        }
+    }
+}
+
+.bg-section-color-grey {
+    background-color: $grey;
+    padding-top: 40px;
+    z-index: 1;
+}
+
+.bg-section-color-white {
+    background-color: #fff;
+    padding-top: 40px;
+    z-index: 1;
 }
