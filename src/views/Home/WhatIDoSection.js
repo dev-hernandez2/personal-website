@@ -10,19 +10,19 @@ class WhatIDo extends Component {
 
   
   render() {
-    const WhatIDoBg = (
-      <div>
-      <p> what</p>
-      <p> I Do</p>
-      </div>
-    )
+
     return (
       <div>
         <Section
           backgroundColor="bg-section-color-blue"
-          textBg={WhatIDoBg}
+          textBg={(
+            <div>
+              <p> what</p>
+              <p> I Do</p>
+            </div>
+          )}
           textColor="bgtextSection"
-         >
+        >
             <SectionTitle 
               title="I code your ideas to life"
               textColor="title is-3 color-white"

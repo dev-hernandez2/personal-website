@@ -3,7 +3,7 @@ import {Helmet} from "react-helmet"
 
 import TopHeader from '../../components/TopHeader'
 import Contact from '../../components/Contact'
-import WhatIDo from './WhatIDo'
+import WhatIDoSection from './WhatIDoSection'
 import Project from './Project'
 
 
@@ -11,14 +11,6 @@ class Home extends Component {
  
   render() {
 
-    const HeroText = (
-      <div>
-        My name is William Hernandez and I am a, 
-        <strong className="has-text-primary"> Full Stack Developer</strong>, 
-        who loves to build Digital Products and is ...
-      </div>
-    )
-    
     return (
       <div className="animated fadeIn">
         <Helmet>
@@ -31,7 +23,13 @@ class Home extends Component {
           <div className=" has-text-centered">
               <TopHeader
                 title="Hello, world"
-                subTitle={HeroText}
+                subTitle={(
+                  <div>
+                    My name is William Hernandez and I am a, 
+                    <strong className="has-text-primary"> Full Stack Developer</strong>, 
+                    who loves to build Digital Products and is ...
+                  </div>
+                )}
                 HasButton={true}
                 buttonStyles="is-primary is-large hvr-grow-shadow"
                 buttonHref="#Contanct" 
@@ -40,7 +38,7 @@ class Home extends Component {
           </div>
         </div>
 
-        <WhatIDo />        
+        <WhatIDoSection />        
         <Project />
         <Contact />
       </div>
