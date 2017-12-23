@@ -7,9 +7,9 @@ import Footer from '../components/Footer'
 
 //views
 import Home from '../views/Home'
+import About from '../views/About'
 import Error404 from '../views/Error/404'
 
-const About  = () => <h1> About </h1>
 const Blog   = () => <h1> Blog </h1>
 
 class Routers extends Component {

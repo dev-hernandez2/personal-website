@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 //import css
 import 'bulma/css/bulma.css'
 import 'animate.css'
-import 'hover.css/css/hover.css'
+import  'hover.css/css/hover.css'
 import './App.css'
 
 

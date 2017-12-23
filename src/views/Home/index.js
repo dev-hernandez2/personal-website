@@ -5,9 +5,17 @@ import TopHeader from '../../components/TopHeader'
 import Contact from '../../components/Contact'
 import WhatIDoSection from './WhatIDoSection'
 import Project from './Project'
+import projectsData from '../../services/data/projects'
 
 
 class Home extends Component {
+  state = {
+    data: [],
+ }
+
+ componentDidMount() {
+   this.setState({data: projectsData}) 
+ }
  
   render() {
 
@@ -31,7 +39,7 @@ class Home extends Component {
                   </div>
                 )}
                 HasButton={true}
-                buttonStyles="is-primary is-large hvr-grow-shadow"
+                buttonStyles="is-primary is-medium hvr-grow-shadow"
                 buttonHref="#Contanct" 
                 buttonText="Available for hire" 
               />
@@ -39,7 +47,7 @@ class Home extends Component {
         </div>
 
         <WhatIDoSection />        
-        <Project />
+        <Project projects={this.state.data}/>
         <Contact />
       </div>
     )

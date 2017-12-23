@@ -3,19 +3,11 @@ import React, { Component } from 'react'
 import Section from '../../components/Section/Section'
 import SectionTitle from '../../components/Section/SectionTile'
 import ProjectsList from '../../components/ProjectsList'
-import projectsData from '../../services/data/projects'
 
 
-class WhatIDoSection extends Component {
 
-  state = {
-     data: [],
-  }
-
-  componentDidMount() {
-    this.setState({data: projectsData}) 
-  }
-      
+class Projects extends Component {
+ 
   render() {
 
     return (
@@ -38,7 +30,7 @@ class WhatIDoSection extends Component {
             />
 
             <div className="row-m">
-              <ProjectsList projects={this.state.data} />    
+              <ProjectsList projects={this.props.projects} />    
             </div>
         </Section>
       </div>
@@ -46,4 +38,5 @@ class WhatIDoSection extends Component {
   }
 }
 
-export default WhatIDoSection
+
+export default Projects

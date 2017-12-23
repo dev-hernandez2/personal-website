@@ -1,0 +1,63 @@
+.header {
+    padding: 40px 0;
+    .hero {
+        .hero-body {
+            .title {
+                font-size: 10vw;
+                font-family: 'Rozha One', serif;
+                font-weight: 900;
+            }
+            .header-btn {
+                margin-top: 20px;
+            }
+        
+        }
+    }
+    .has-text-primary {
+        color: $Highlight !important;
+    }
+}
+
+@media (min-width: 544px) {
+    .header {
+        .hero {
+            .hero-body {
+                .title {
+                    font-size: 8vw;
+                }
+               
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        .hero {
+            .hero-body {
+                .title {
+                    font-size: 6vw;
+                }
+                
+            }
+        }
+    }
+}
+.about-body {
+    padding: 0 5%;
+    p.regular {
+        margin: 3rem 0;
+        color: $typeColor;
+        font-size: 1.5em;
+    }
+
+    .skills{
+        h2 {
+            font-size: 1.5em;
+        }
+        p.regular {
+            margin: 1rem 0;
+            font-size: 1.3em;
+        }
+    }
+}

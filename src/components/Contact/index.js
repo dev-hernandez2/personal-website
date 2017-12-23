@@ -30,7 +30,9 @@ class Contact extends Component {
 
                <Row display="top-space-m row-m">
                 <Column>
-                    <p>Texto contact</p>
+                    <h2 className="title">Let's build something!</h2>
+                    <p className="regular">Email me if your have any
+                    unanswered questions.</p>
                 </Column>
                 <Column>
                     <Form action="#" method="post" />

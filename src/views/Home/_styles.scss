@@ -4,17 +4,20 @@
         .hero-body {
             .title {
                 font-size: 10vw;
+                
             }
             .subtitle {
                 width: 90%;
                 margin: 0 auto 20px auto;
                 font-size: 6vw;
+                
             }
             .title,
             .subtitle {
                 text-align: center;
                 font-family: 'Rozha One', serif;
-                font-weight: 300;
+                font-weight: 900;
+               
             }
         }
     }
@@ -44,7 +47,7 @@
         .hero {
             .hero-body {
                 .title {
-                    font-size: 5vw;
+                    font-size: 6vw;
                 }
                 .subtitle {
                     width: 50%;
@@ -72,7 +75,7 @@
 
 .title {
     font-family: 'Rozha One', serif;
-    font-weight: 300;
+    font-weight: 900;
 }
 
 .top-line {
@@ -200,4 +203,8 @@
     background-color: #fff;
     padding-top: 40px;
     z-index: 1;
+}
+
+p.regular {
+    font-size: 1.3em;
 }

@@ -42,7 +42,7 @@ body {
     position: absolute;
     z-index: -2;
     font-family: 'Rozha One', serif;
-    font-weight: 300;
+    font-weight: 900;
     font-size: 9em; }
     .section-area .section-bg-text p:nth-child(2), .section-area .section-bg-text p:nth-child(3) {
       margin-top: -100px; }
@@ -89,7 +89,7 @@ body {
   .home-header .hero .hero-body .subtitle {
     text-align: center;
     font-family: 'Rozha One', serif;
-    font-weight: 300; }
+    font-weight: 900; }
   .home-header .has-text-primary {
     color: #40D59F !important; }
 
@@ -102,7 +102,7 @@ body {
 
 @media (min-width: 768px) {
   .home-header .hero .hero-body .title {
-    font-size: 5vw; }
+    font-size: 6vw; }
   .home-header .hero .hero-body .subtitle {
     width: 50%;
     margin: 0 auto 20px auto;
@@ -121,7 +121,7 @@ body {
 
 .title {
   font-family: 'Rozha One', serif;
-  font-weight: 300; }
+  font-weight: 900; }
 
 .top-line {
   border: 1px #fff solid;
@@ -212,3 +212,37 @@ body {
   background-color: #fff;
   padding-top: 40px;
   z-index: 1; }
+
+p.regular {
+  font-size: 1.3em; }
+
+.header {
+  padding: 40px 0; }
+  .header .hero .hero-body .title {
+    font-size: 10vw;
+    font-family: 'Rozha One', serif;
+    font-weight: 900; }
+  .header .hero .hero-body .header-btn {
+    margin-top: 20px; }
+  .header .has-text-primary {
+    color: #40D59F !important; }
+
+@media (min-width: 544px) {
+  .header .hero .hero-body .title {
+    font-size: 8vw; } }
+
+@media (min-width: 768px) {
+  .header .hero .hero-body .title {
+    font-size: 6vw; } }
+
+.about-body {
+  padding: 0 5%; }
+  .about-body p.regular {
+    margin: 3rem 0;
+    color: #2E3C40;
+    font-size: 1.5em; }
+  .about-body .skills h2 {
+    font-size: 1.5em; }
+  .about-body .skills p.regular {
+    margin: 1rem 0;
+    font-size: 1.3em; }
