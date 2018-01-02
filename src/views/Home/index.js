@@ -1,24 +1,22 @@
-import React, { Component } from 'react'
-import {Helmet} from "react-helmet"
+import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 
-import TopHeader from '../../components/TopHeader'
-import Contact from '../../components/Contact'
-import WhatIDoSection from './WhatIDoSection'
-import Project from './Project'
-import projectsData from '../../services/data/projects'
-
+import TopHeader from "../../components/TopHeader";
+import Contact from "../../components/Contact";
+import WhatIDoSection from "./WhatIDoSection";
+import Project from "./Project";
+import projectsData from "../../services/data/projects";
 
 class Home extends Component {
   state = {
-    data: [],
- }
+    projects: []
+  };
 
- componentDidMount() {
-   this.setState({data: projectsData}) 
- }
- 
+  componentDidMount() {
+    this.setState({ projects: projectsData });
+  }
+
   render() {
-
     return (
       <div className="animated fadeIn">
         <Helmet>
@@ -29,29 +27,31 @@ class Home extends Component {
 
         <div className="home-header">
           <div className=" has-text-centered">
-              <TopHeader
-                title="Hello, world"
-                subTitle={(
-                  <div>
-                    My name is William Hernandez and I am a, 
-                    <strong className="has-text-primary"> Full Stack Developer</strong>, 
-                    who loves to build Digital Products and is ...
-                  </div>
-                )}
-                HasButton={true}
-                buttonStyles="is-primary is-medium hvr-grow-shadow"
-                buttonHref="#Contanct" 
-                buttonText="Available for hire" 
-              />
+            <TopHeader
+              title="Hello, world"
+              subTitle={
+                <div>
+                  My name is William Hernandez and I am a,
+                  <strong className="has-text-primary">
+                    {" "}
+                    Full Stack Developer
+                  </strong>, who loves to build Digital Products and is ...
+                </div>
+              }
+              HasButton={true}
+              buttonStyles="is-primary is-medium hvr-grow-shadow"
+              buttonHref="#Contanct"
+              buttonText="Available for hire"
+            />
           </div>
         </div>
 
-        <WhatIDoSection />        
-        <Project projects={this.state.data}/>
+        <WhatIDoSection />
+        <Project projects={this.state.projects} />
         <Contact />
       </div>
-    )
+    );
   }
 }
 
-export default Home
+export default Home;

@@ -1,46 +1,35 @@
-
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 //import componets
-import Button from '../Button'
-
+import Button from "../Button";
 
 class TopHeader extends Component {
-
-
-  buttonElement = (props) => {
-    
+  buttonElement = props => {
     if (this.props.HasButton) {
-        return (
-          <Button
-            color={this.props.buttonStyles}
-            type="link" 
-            href={this.props.buttonHref}
-            text={this.props.buttonText}
-          />
-        )
+      return (
+        <Button
+          color={this.props.buttonStyles}
+          type="link"
+          href={this.props.buttonHref}
+          text={this.props.buttonText}
+        />
+      );
     }
-  }
+  };
 
   render() {
     return (
-    <section className="hero">
+      <section className="hero">
         <div className="hero-body">
           <div className="container">
-            <h1 className="title">
-             {this.props.title}
-            </h1>
-            <h2 className="subtitle">
-              {this.props.subTitle}
-            </h2>
-             
+            <h1 className="title">{this.props.title}</h1>
+            <h2 className="subtitle">{this.props.subTitle}</h2>
             {this.buttonElement()}
-             
           </div>
         </div>
-    </section>  
-    )
+      </section>
+    );
   }
 }
 
-export default TopHeader
+export default TopHeader;

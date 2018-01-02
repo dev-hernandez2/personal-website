@@ -1,22 +1,15 @@
-import React, { Component } from 'react'
+import React from "react";
 
-
-
-
-class Footer extends Component {
-
-  render() {
-    return (
-     <footer className="footer">
-        <div className="container">
-          <div className="content has-text-centered">
-            <p>
-              
-            </p>
-          </div>
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="container">
+        <div className="content has-text-centered">
+          <p />
         </div>
-      </footer>
-    )
-  }
-}
-export default Footer
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

@@ -1,42 +1,35 @@
-import React, { Component } from 'react'
+import React  from "react";
 
-import Section from '../../components/Section/Section'
-import SectionTitle from '../../components/Section/SectionTile'
-import ProjectsList from '../../components/ProjectsList'
+import Section from "../../components/Section/Section";
+import SectionTitle from "../../components/Section/SectionTile";
+import ProjectsList from "../../components/ProjectsList";
 
-
-
-class Projects extends Component {
- 
-  render() {
+const Projects = props => {
 
     return (
-       
       <div>
         <Section
           backgroundColor="bg-section-color-white"
-          textBg={(
+          textBg={
             <div>
               <p> How I</p>
               <p> Do It</p>
             </div>
-          )}
+          }
           textColor="bgtextSectionProject"
         >
-            <SectionTitle 
-              title="Selected Work"
-              textColor="title is-3 color-regular"
-              topLineColor="top-primary"
-            />
+          <SectionTitle
+            title="Selected Work"
+            textColor="title is-3 color-regular"
+            topLineColor="top-primary"
+          />
 
-            <div className="row-m">
-              <ProjectsList projects={this.props.projects} />    
-            </div>
+          <div className="row-m">
+            <ProjectsList projects={props.projects} />
+          </div>
         </Section>
       </div>
-    )
+    );
   }
-}
 
-
-export default Projects
+export default Projects;

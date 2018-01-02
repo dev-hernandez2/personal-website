@@ -18,7 +18,6 @@ const About = () => {
         </Helmet>
 
         <div className="header">
-          <div className="">
               <TopHeader
                 title={(
                     <div>
@@ -32,7 +31,6 @@ const About = () => {
                 buttonHref="#Contanct" 
                 buttonText="Send Masagge" 
               />
-          </div>
         </div>
         <Section
         backgroundColor="bg-section-color-white"
@@ -78,7 +76,7 @@ const About = () => {
                 <h2><strong>Skills:</strong></h2>
 
                 <p className="regular">
-                  Node.js, Express.js, MongoDB, PHP, MYSQL, Laravel, CSS, SASS, HTML, JavaScript, React.js, Vue.js, Jquery,
+                  Node.js, Express.js, MongoDB, PHP, MYSQL, Wordpress, Laravel, CSS, SASS, HTML, JavaScript, React.js, Vue.js, Jquery,
                   Adobe Suite, Visual Studio Code
                 </p>
               </div>
