@@ -1,21 +1,23 @@
 //import typography
-@import url('https://fonts.googleapis.com/css?family=Barlow:400,600,800|Rozha+One');
+@import url("https://fonts.googleapis.com/css?family=Barlow:400,600,800|Rozha+One");
 //variables
-@import 'variables/_var';
-@import '_global';
+@import "variables/_var";
+@import "_global";
 //buttom styles
-@import '../../components/Button/_styles';
+@import "../../components/Button/_styles";
 //navegator styles
-@import '../../components/Nav/_styles';
-//top header component styles 
-@import '../../components/TopHeader/_styles';
+@import "../../components/Nav/_styles";
+//top header component styles
+@import "../../components/TopHeader/_styles";
 //section component styles
-@import '../../components/Section/_styles';
+@import "../../components/Section/_styles";
 //Contac component styles
-@import '../../components/Contact/_styles';
+@import "../../components/Contact/_styles";
 
-//pages componen styles 
-//home
-@import '../../views/Home/_styles';
-@import '../../views/About/_styles';
-@import '../../views/Error/_styles';
+//pages componen styles
+//homes
+@import "../../views/Home/_styles";
+@import "../../views/About/_styles";
+@import "../../views/Error/_styles";
+
+@import "../../components/Footer/_styles";

@@ -1,210 +1,207 @@
 .home-header {
-    padding: 40px 0;
-    .hero {
-        .hero-body {
-            .title {
-                font-size: 10vw;
-                
-            }
-            .subtitle {
-                width: 90%;
-                margin: 0 auto 20px auto;
-                font-size: 6vw;
-                
-            }
-            .title,
-            .subtitle {
-                text-align: center;
-                font-family: 'Rozha One', serif;
-                font-weight: 900;
-               
-            }
-        }
+  padding: 40px 0;
+  .hero {
+    .hero-body {
+      .title {
+        font-size: 10vw;
+      }
+      .subtitle {
+        width: 90%;
+        margin: 0 auto 20px auto;
+        font-size: 6vw;
+      }
+      .title,
+      .subtitle {
+        text-align: center;
+        font-family: "Rozha One", serif;
+        font-weight: 900;
+      }
     }
-    .has-text-primary {
-        color: $Highlight !important;
-    }
+  }
+  .has-text-primary {
+    color: $Highlight !important;
+  }
 }
 
 @media (min-width: 544px) {
-    .home-header {
-        .hero {
-            .hero-body {
-                .title {
-                    font-size: 8vw;
-                }
-                .subtitle {
-                    width: 70%;
-                    font-size: 4vw;
-                }
-            }
+  .home-header {
+    .hero {
+      .hero-body {
+        .title {
+          font-size: 8vw;
         }
+        .subtitle {
+          width: 70%;
+          font-size: 4vw;
+        }
+      }
     }
+  }
 }
 
 @media (min-width: 768px) {
-    .home-header {
-        .hero {
-            .hero-body {
-                .title {
-                    font-size: 6vw;
-                }
-                .subtitle {
-                    width: 50%;
-                    margin: 0 auto 20px auto;
-                    font-size: 2.5vw;
-                }
-            }
+  .home-header {
+    .hero {
+      .hero-body {
+        .title {
+          font-size: 6vw;
         }
+        .subtitle {
+          width: 50%;
+          margin: 0 auto 20px auto;
+          font-size: 2.5vw;
+        }
+      }
     }
+  }
 }
 
 .bg-section-color-blue {
-    padding-top: 40px;
-    background: $main;
-    z-index: -1;
+  padding-top: 40px;
+  background: $main;
+  z-index: -1;
 }
 
 .color-white {
-    color: #fff;
+  color: #fff;
 }
 
 .color-regular {
-    color: $typeColor;
+  color: $typeColor;
 }
 
 .title {
-    font-family: 'Rozha One', serif;
-    font-weight: 900;
+  font-family: "Rozha One", serif;
+  font-weight: 900;
 }
 
 .top-line {
-    border: 1px #fff solid;
-    margin: 0 auto 15px auto;
-    width: 50px;
-    &.top-primary {
-        border: 1px $Highlight solid;
-    }
+  border: 1px #fff solid;
+  margin: 0 auto 15px auto;
+  width: 50px;
+  &.top-primary {
+    border: 1px $Highlight solid;
+  }
 }
 
 //this not belong to this file is belong to Footer/_styles.scss
 .footer {
-    background: $Highlight !important;
+  background: $Highlight !important;
 }
 
 .bgtextSection {
-    color: $textBg;
-    left: 30px;
-    top: 80px;
+  color: $textBg;
+  left: 30px;
+  top: 80px;
 }
 
 .bgtextSectionProject {
-    color: #F3F4F5;
-    left: 30px;
-    top: 100px;
+  color: #f3f4f5;
+  left: 30px;
+  top: 100px;
 }
 
 @media (min-width: 768px) {
-    .section-area {
-        .bgtextSectionProject {
-            left: 30px;
-            top: 110px;
-            p:last-child {
-                margin-top: -100px;
-            }
-        }
+  .section-area {
+    .bgtextSectionProject {
+      left: 30px;
+      top: 110px;
+      p:last-child {
+        margin-top: -100px;
+      }
     }
+  }
 }
 
 .section-area {
-    .row-m {
-        margin: 60px 0 100px 0;
+  .row-m {
+    margin: 60px 0 100px 0;
+  }
+  .what-ido-div {
+    margin: 40px 0 0 0;
+    h3,
+    p {
+      color: #fff;
+      font-family: "Barlow", sans-serif;
     }
-    .what-ido-div {
-        margin: 40px 0 0 0;
-        h3,
-        p {
-            color: #fff;
-            font-family: 'Barlow', sans-serif;
-        }
-        h3 {
-            font-weight: 600;
-            font-size: 1.5em;
-            margin-bottom: 30px;
-        }
-        p {
-            font-size: 1.3em;
-        }
+    h3 {
+      font-weight: 600;
+      font-size: 1.5em;
+      margin-bottom: 30px;
     }
+    p {
+      font-size: 1.3em;
+    }
+  }
 }
 
 .section-area {
+  .row-m {
+    margin: 100px 0 100px 0;
+  }
+  .how-do-div {
+    .project-info {
+      margin: 50px 0 30px 0;
+      h3,
+      h4,
+      p {
+        color: $typeColor;
+        font-family: "Barlow", sans-serif;
+      }
+      h3 {
+        font-weight: 900;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+      p,
+      .do-tch {
+        font-size: 1.3em;
+      }
+      p {
+        margin-bottom: 20px;
+        width: 80%;
+        margin-left: 25px;
+      }
+      .do-tch {
+        color: $Highlight;
+      }
+      .btn-project {
+        margin-left: 25px;
+      }
+    }
+    img {
+      display: none;
+      margin-top: 90px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .section-area {
     .row-m {
-        margin: 100px 0 100px 0;
+      margin: 100px 0 100px 0;
     }
     .how-do-div {
-        .project-info {
-            margin: 50px 0 30px 0;
-            h3,
-            h4,
-            p {
-                color: $typeColor;
-                font-family: 'Barlow', sans-serif;
-            }
-            h3 {
-                font-weight: 900;
-                font-size: 1.5em;
-                margin-bottom: 10px;
-            }
-            p,
-            .do-tch {
-                font-size: 1.3em;
-            }
-            p {
-                margin-bottom: 20px;
-                width: 80%;
-                margin-left: 25px;
-            }
-            .do-tch {
-                color: $Highlight;
-            }
-            .btn-project {
-                margin-left: 25px;
-            }
-        }
-        img {
-            display: none;
-            margin-top: 90px;
-        }
+      img {
+        display: block;
+        margin-top: 90px;
+      }
     }
-}
-
-@media (min-width: 768px) {
-    .section-area {
-        .row-m {
-            margin: 100px 0 100px 0;
-        }
-        .how-do-div {
-            img {
-                display: block;
-                margin-top: 90px;
-            }
-        }
-    }
+  }
 }
 
 .bg-section-color-grey {
-    background-color: $grey;
-    padding-top: 40px;
-    z-index: 1;
+  background-color: $grey;
+  padding-top: 40px;
+  z-index: 1;
 }
 
 .bg-section-color-white {
-    background-color: #fff;
-    padding-top: 40px;
-    z-index: 1;
+  background-color: #fff;
+  padding-top: 40px;
+  z-index: 1;
 }
 
 p.regular {
-    font-size: 1.3em;
+  font-size: 1.3em;
 }

@@ -1,26 +1,26 @@
 .section-area {
-    position: relative;
-    //overflow: hidden;
-    .section-bg-text {
-        position: absolute;
-        z-index: -2;
-        font-family: 'Rozha One', serif;
-        font-weight: 900;
-        font-size: 9em;
-        p:nth-child(2), p:nth-child(3) {
-            margin-top: -100px;
-        }
+  position: relative;
+  //overflow: hidden;
+  .section-bg-text {
+    position: absolute;
+    z-index: -2;
+    font-family: "Rozha One", serif;
+    font-weight: 900;
+    font-size: 9em;
+    p:nth-child(2),
+    p:nth-child(3) {
+      margin-top: -100px;
     }
+  }
 }
 
 @media (min-width: 768px) {
-    .section-area {
-        .section-bg-text {
-            
-            font-size: 12em;
-            p:last-child {
-                margin-top: -100px;
-            }
-        }
+  .section-area {
+    .section-bg-text {
+      font-size: 12em;
+      p:last-child {
+        margin-top: -100px;
+      }
     }
+  }
 }

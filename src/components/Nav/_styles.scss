@@ -1,30 +1,27 @@
-
 .navbar-main {
+  background-color: $main;
+  padding: 0.5em 0;
+
+  .navbar-item,
+  .burger {
+    color: $Highlight;
+    font-size: 1.3em;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+
+    &:hover {
+      color: white;
+      background-color: $main;
+    }
+  }
+  .navbar-menu {
     background-color: $main;
-    padding: .50em 0;
-
-    .navbar-item, .burger {
-        color: $Highlight;
-        font-size: 1.3em;
-        font-family: 'Barlow', sans-serif;
-        font-weight: 600;
-
-        &:hover {
-            color: white;
-            background-color: $main;
-        }
-
-        
+    &is-active {
+      background-color: $main;
     }
-    .navbar-menu {
-        background-color: $main;
-        &is-active {
-            background-color: $main;
-        }
-    }
-    .logo {
-        padding-top: 5px;
-        padding-left: 15px;
-    }
-    
+  }
+  .logo {
+    padding-top: 5px;
+    padding-left: 15px;
+  }
 }

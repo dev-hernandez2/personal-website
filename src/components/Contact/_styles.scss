@@ -1,30 +1,30 @@
 .box-contact {
-    border: 1px solid $Highlight !important; 
-    margin-bottom: -250px;
-    padding-bottom: 45px;
-    .contact-btn {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 45px;
-    }
+  border: 1px solid $Highlight !important;
+  margin-bottom: -250px;
+  padding-bottom: 45px;
+  .contact-btn {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 45px;
+  }
 
-    .input, .textarea {
+  .input,
+  .textarea {
+    border: 1px solid $Highlight !important;
+  }
 
-            border: 1px solid $Highlight !important; 
-    }
-
-    .field {
-        margin-top: 45px;
-    }
+  .field {
+    margin-top: 45px;
+  }
 }
 .bgtextSectionContact {
-    color: #fff;
-    left: 30px;
-    top: 100px;
+  color: #fff;
+  left: 30px;
+  top: 100px;
 }
