@@ -1,11 +1,21 @@
 .footer {
   padding-top: 7.35rem;
   color: white;
+  background: $Highlight !important;
 
   a {
     color: white;
     font-family: "Rozha One", serif;
     font-weight: 400;
     font-size: 1.4em;
+  }
+
+  .terms-policy {
+    margin-top: 100px;
+ margin-bottom: -60px;
+      a{
+        font-size: 1em;
+        font-family: "Barlow", sans-serif;
+      }
   }
 }

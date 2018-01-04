@@ -12,21 +12,19 @@ import Error404 from "../views/Error/404";
 
 const Blog = () => <h1> Blog </h1>;
 
-const Routers = () => {
-  return (
-    <Router>
-      <div>
-        <Nav />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/blog" component={Blog} />
-          <Route component={Error404} />
-        </Switch>
-        <Footer />
-      </div>
-    </Router>
-  );
-};
+const Routers = () => (
+  <Router>
+    <div>
+      <Nav />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/blog" component={Blog} />
+        <Route component={Error404} />
+      </Switch>
+      <Footer />
+    </div>
+  </Router>
+);
 
 export default Routers;

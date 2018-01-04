@@ -135,9 +135,6 @@ body {
   .top-line.top-primary {
     border: 1px #40d59f solid; }
 
-.footer {
-  background: #40d59f !important; }
-
 .bgtextSection {
   color: #05233c;
   left: 30px;
@@ -254,9 +251,16 @@ p.regular {
 
 .footer {
   padding-top: 7.35rem;
-  color: white; }
+  color: white;
+  background: #40d59f !important; }
   .footer a {
     color: white;
     font-family: "Rozha One", serif;
     font-weight: 400;
     font-size: 1.4em; }
+  .footer .terms-policy {
+    margin-top: 100px;
+    margin-bottom: -60px; }
+    .footer .terms-policy a {
+      font-size: 1em;
+      font-family: "Barlow", sans-serif; }
