@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import TopHeader from "../../components/TopHeader";
 import Section from "../../components/Section/Section";
 import SectionTitle from "../../components/Section/SectionTile";
+import ImagesList from "../../components/ImagesList";
 
 const About = () => (
   <div className="animated fadeIn">
@@ -81,6 +82,8 @@ const About = () => (
           </p>
         </div>
       </div>
+
+      <ImagesList />
     </Section>
   </div>
 );
