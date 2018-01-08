@@ -1,28 +1,16 @@
-import React, { Component } from "react";
-import callInstagramApi from "../../services/api/Instagram";
+import React from "react";
 
-class ImagesList extends Component {
-  state = {
-    response: ""
-  };
-
-  componentDidMount() {
-    callInstagramApi()
-      .then(res => this.setState({ response: res.data }))
-      .catch(err => console.log(err));
-  }
-
-  render() {
-      
-    return (
-      <div className="App">
-        ({
-            console.log(this.state.response)
-        })
-      
-      </div>
-    );
-  }
-}
+const ImagesList = ({ media }) => (
+  <div className="App">
+    {// console.log(this.props.media)
+    media.map(media => {
+      return (
+        <div key={media.id}>
+          <img src={media.images.thumbnail.url} alt={media.caption.text} />
+        </div>
+      );
+    })}
+  </div>
+);
 
 export default ImagesList;
