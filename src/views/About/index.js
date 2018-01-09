@@ -99,7 +99,8 @@ class About extends Component {
             </div>
           </div>
 
-          <ImagesList media={this.state.response} />
+          <ImagesList media={ this.state.response } />
+
         </Section>
       </div>
     );
