@@ -99,8 +99,12 @@ class About extends Component {
             </div>
           </div>
 
-          <ImagesList media={ this.state.response } />
-
+            {
+              ( this.state.response.length > 0 ) ? 
+              <ImagesList media={ this.state.response } /> :
+              <img src='https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif' alt='loading....'/>
+            }
+          
         </Section>
       </div>
     );

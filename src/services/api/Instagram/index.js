@@ -9,18 +9,9 @@ const callInstagramApi = async () => {
   const response = await fetch(uriApi);
   const gallery = await response.json();
   
-
   if (response.status !== 200) throw Error(gallery.message);
-
+  
   return gallery;
 };
 
 export default callInstagramApi;
-
-// componentDidMount() {
-//     this.callApi()
-//         .them(res => this.setState({
-//             response: res.data
-//         }))
-//         .catch(err => console.log(err))
-// }
