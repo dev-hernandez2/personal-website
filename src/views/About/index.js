@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
+import Spinner from 'react-spinkit';
 
 import TopHeader from "../../components/TopHeader";
 import Section from "../../components/Section/Section";
@@ -102,7 +103,7 @@ class About extends Component {
             {
               ( this.state.response.length > 0 ) ? 
               <ImagesList media={ this.state.response } /> :
-              <img src='https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif' alt='loading....'/>
+              <Spinner name="ball-scale-multiple" color="aquamarine" />
             }
           
         </Section>
