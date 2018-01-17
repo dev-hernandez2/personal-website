@@ -1,19 +1,19 @@
-import React, { Component } from "react";
-import { Helmet } from "react-helmet";
+import React, { Component } from "react"
+import { Helmet } from "react-helmet"
 
-import TopHeader from "../../components/TopHeader";
-import Contact from "../../components/Contact";
-import WhatIDoSection from "./WhatIDoSection";
-import Project from "./Project";
-import projectsData from "../../services/data/projects";
+import TopHeader from "../../components/TopHeader"
+import Contact from "../../components/Contact"
+import WhatIDoSection from "./WhatIDoSection"
+import Project from "./Project"
+import projectsData from "../../services/data/projects"
 
 class Home extends Component {
   state = {
     projects: []
-  };
+  }
 
   componentDidMount() {
-    this.setState({ projects: projectsData });
+    this.setState({ projects: projectsData })
   }
 
   render() {
@@ -22,7 +22,7 @@ class Home extends Component {
         <Helmet>
           <meta charSet="utf-8" />
           <title>Home | dev_hernandez2 Personal Website</title>
-          <meta name="description" content="Hernandez2.com" />
+          <meta name="description" content="" />
         </Helmet>
 
         <div className="home-header">

@@ -6,7 +6,7 @@ import TopHeader from "../../components/TopHeader";
 import Section from "../../components/Section/Section";
 import SectionTitle from "../../components/Section/SectionTile";
 import ImagesList from "../../components/ImagesList";
-
+//instagram API Call Component
 import callInstagramApi from "../../services/api/Instagram";
 
 class About extends Component {
@@ -93,8 +93,8 @@ class About extends Component {
               </h2>
 
               <p className="regular">
-                Node.js, Express.js, MongoDB, PHP, MYSQL, Wordpress, Laravel,
-                CSS, SASS, HTML, JavaScript, React.js, Vue.js, Jquery, Adobe
+                JavaScript, Node.js, Express.js, MongoDB, PHP, MYSQL, Wordpress, Laravel,
+                CSS, SASS, HTML, React.js, Vue.js, Jquery, Adobe
                 Suite, Visual Studio Code
               </p>
             </div>
