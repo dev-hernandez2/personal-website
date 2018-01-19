@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
-import Spinner from 'react-spinkit';
 
 import TopHeader from "../../components/TopHeader";
 import Section from "../../components/Section/Section";
@@ -9,15 +8,18 @@ import ImagesList from "../../components/ImagesList";
 //instagram API Call Component
 import callInstagramApi from "../../services/api/Instagram";
 
+
 class About extends Component {
   state = {
     response: []
   };
 
   componentDidMount() {
-    callInstagramApi()
+    setInterval( () => { 
+      callInstagramApi()
       .then(res => this.setState({ response: res.data }))
       .catch(err => console.log(err));
+     }, 3000);
   }
 
   render() {
@@ -99,14 +101,8 @@ class About extends Component {
               </p>
             </div>
           </div>
-
-            {
-              ( this.state.response.length > 0 ) ? 
-              <ImagesList media={ this.state.response } /> :
-              <Spinner name="ball-scale-multiple" color="aquamarine" />
-            }
-          
         </Section>
+          <ImagesList media={ this.state.response } /> 
       </div>
     );
   }

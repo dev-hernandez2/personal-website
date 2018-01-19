@@ -1,0 +1,10 @@
+.instagram-gallery {
+    background: white;
+    .section {
+       
+        &.is-light-section {
+            background: $grey;
+        }
+    }
+   
+}

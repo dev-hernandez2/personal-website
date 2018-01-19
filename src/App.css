@@ -82,6 +82,11 @@ body {
   left: 30px;
   top: 100px; }
 
+.instagram-gallery {
+  background: white; }
+  .instagram-gallery .section.is-light-section {
+    background: #f7f7f6; }
+
 .home-header {
   padding: 40px 0; }
   .home-header .hero .hero-body .title {
