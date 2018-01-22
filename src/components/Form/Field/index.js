@@ -1,16 +1,16 @@
 import React from "react";
 
-const Field = props => (
+const Field = ({label, inputDisplay, inputId, placeholder, inputType}) => (
   <div className="field">
-    <label className="label">{props.label}</label>
+    <label className="label">{label}</label>
     <div className="control">
       {(() => {
-        if (props.inputDisplay === "textarea") {
+        if (inputDisplay === "textarea") {
           return (
             <textarea
               className="textarea"
-              id={props.inputId}
-              placeholder={props.placeholder}
+              id={inputId}
+              placeholder={placeholder}
               rows="10"
             />
           );
@@ -18,9 +18,9 @@ const Field = props => (
           return (
             <input
               className="input"
-              id={props.inputId}
-              type={props.inputType}
-              placeholder={props.placeholder}
+              id={inputId}
+              type={inputType}
+              placeholder={placeholder}
             />
           );
         }

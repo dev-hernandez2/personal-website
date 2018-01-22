@@ -1,8 +1,8 @@
 import React from "react";
 
-const Column = props => (
-  <div className={"column " + (props.size ? props.size : "")}>
-    {props.children}
+const Column = ({size, children}) => (
+  <div className={"column " + (size ? size : "")}>
+    {children}
   </div>
 );
 

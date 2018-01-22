@@ -7,8 +7,8 @@ import Button from "../Button";
 //test img
 import images from "../../assets/img/dummy.jpg";
 
-const ProjectsList = props => {
-  return props.projects.map(project => {
+const ProjectsList = ({projects}) => {
+  return projects.map(project => {
     return (
       <Row key={project.id} display="is-mobile">
         <Column size="is-12 is-offset-1">

@@ -3,9 +3,9 @@ import React from "react";
 import Button from "../Button";
 import Field from "./Field";
 
-const Form = props => (
+const Form = ({action, method}) => (
   <div className="box box-contact">
-    <form action={props.action} method={props.method}>
+    <form action={action} method={method}>
       <Field
         label="Email"
         placeholder="Put your Email"

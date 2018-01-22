@@ -1,15 +1,15 @@
 import React from "react";
 
-const Section = props => (
+const Section = ({backgroundColor, textBg, textColor, children}) => (
   <section
-    className={"section-area " + (props.backgroundColor ? props.backgroundColor : "")}
+    className={"section-area " + (backgroundColor ? backgroundColor : "")}
   >
     <div
-      className={"section-bg-text " + (props.textColor ? props.textColor : "")}
+      className={"section-bg-text " + (textColor ? textColor : "")}
     >
-      {props.textBg}
+      {textBg}
     </div>
-    <div className="section container">{props.children}</div>
+    <div className="section container">{children}</div>
   </section>
 );
 export default Section;

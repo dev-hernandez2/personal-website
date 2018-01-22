@@ -1,11 +1,11 @@
 import React from "react";
 
-const SectionTitle = props => (
-  <div className={"has-text-centered " + (props.display ? props.display : "")}>
+const SectionTitle = ({display, topLineColor, textColor, title}) => (
+  <div className={"has-text-centered " + (display ? display : "")}>
     <div
-      className={"top-line " + (props.topLineColor ? props.topLineColor : "")}
+      className={"top-line " + (topLineColor ? topLineColor : "")}
     />
-    <h2 className={props.textColor}>{props.title}</h2>
+    <h2 className={textColor}>{title}</h2>
   </div>
 );
 export default SectionTitle;

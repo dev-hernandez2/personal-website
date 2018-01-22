@@ -1,31 +1,28 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Button extends Component {
-  buttonElement = props => {
-    if (this.props.type === "link") {
+const Button = ({type, href, color, text}) => {
+  const buttonElement = props => {
+    if (type === "link") {
       return (
         <a
-          href={this.props.href ? this.props.href : ""}
-          className={"button " + (this.props.color ? this.props.color : "")}
+          href={href ? href : ""}
+          className={"button " + (color ? color : "")}
         >
-          {this.props.text ? this.props.text : "Link"}
+          {text ? text : "Link"}
         </a>
       );
-    } else if (this.props.type === "submit") {
+    } else if (type === "submit") {
       return (
         <button
           type="submit"
-          className={"button " + (this.props.color ? this.props.color : "")}
+          className={"button " + (color ? color : "")}
         >
-          {this.props.text ? this.props.text : "Submit"}
+          {text ? text : "Submit"}
         </button>
       );
     }
   };
-
-  render() {
-    return this.buttonElement();
-  }
+    return buttonElement();
 }
 
 export default Button;

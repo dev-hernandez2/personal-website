@@ -1,8 +1,8 @@
 import React from "react";
 
-const Row = props => (
-  <div className={"columns " + (props.display ? props.display : "")}>
-    {props.children}
+const Row = ({display, children}) => (
+  <div className={"columns " + (display ? display : "")}>
+    {children}
   </div>
 );
 export default Row;
