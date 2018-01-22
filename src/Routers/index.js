@@ -8,9 +8,9 @@ import Footer from "../components/Footer";
 //views
 import Home from "../views/Home";
 import About from "../views/About";
+import Blog from "../views/Blog";
 import Error404 from "../views/Error/404";
 
-const Blog = () => <h1> Blog </h1>;
 
 const Routers = () => (
   <Router>
