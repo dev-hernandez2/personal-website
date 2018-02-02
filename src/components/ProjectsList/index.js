@@ -14,7 +14,7 @@ const ProjectsList = ({projects}) => {
         <Column size="is-12 is-offset-1">
           <Row display="how-do-div">
             {(() => {
-              if (project.position === "left") {
+              if (project.short.position === "left") {
                 return (
                   <Column>
                     <img className="" src={images} alt="" />
@@ -23,18 +23,18 @@ const ProjectsList = ({projects}) => {
               }
             })()}
             <Column size="project-info">
-              <h3>{project.title}</h3>
-              <h4 className="do-tch">{project.do}</h4>
-              <p>{project.description}</p>
+              <h3>{project.company}</h3>
+              <h4 className="do-tch">{project.short.stack}</h4>
+              <p>{project.short.description}</p>
               <Button
                 color=" is-primary btn-project hvr-shadow"
                 type="link"
-                href="#"
+                href={"/project/" + project.id }
                 text="See Case Study"
               />
             </Column>
             {(() => {
-              if (project.position === "right") {
+              if (project.short.position === "right") {
                 return (
                   <Column>
                     <img className="" src={images} alt="" />
