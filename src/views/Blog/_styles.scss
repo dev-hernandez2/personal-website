@@ -1,0 +1,58 @@
+.blog-header {
+    padding: 40px 0;
+    .hero {
+      .hero-body {
+        .title {
+          font-size: 10vw;
+        }
+        .subtitle {
+          width: 90%;
+          margin: 0 auto 20px auto;
+          font-size: 6vw;
+        }
+        .title,
+        .subtitle {
+          text-align: center;
+          font-family: "Rozha One", serif;
+          font-weight: 400;
+        }
+      }
+    }
+    .has-text-primary {
+      color: $Highlight !important;
+    }
+  }
+  
+  @media (min-width: 544px) {
+    .home-header {
+      .hero {
+        .hero-body {
+          .title {
+            font-size: 8vw;
+          }
+          .subtitle {
+            width: 70%;
+            font-size: 4vw;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .blog-header {
+      .hero {
+        .hero-body {
+          .title {
+            font-size: 6vw;
+          }
+          .subtitle {
+            width: 50%;
+            margin: 0 auto 20px auto;
+            font-size: 2.5vw;
+          }
+        }
+      }
+    }
+  }
+  

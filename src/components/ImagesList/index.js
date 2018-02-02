@@ -5,6 +5,7 @@ import Spinner from 'react-spinkit';
 import Row from "../Grids/Row";
 //Img Component
 import ImgItem from "./ImgItem";
+//section component
 import SectionTitle from "../Section/SectionTile";
 import Section from "../Section/Section";
 

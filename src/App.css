@@ -254,6 +254,37 @@ p.regular {
     margin: 1rem 0;
     font-size: 1.3em; }
 
+.blog-header {
+  padding: 40px 0; }
+  .blog-header .hero .hero-body .title {
+    font-size: 10vw; }
+  .blog-header .hero .hero-body .subtitle {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    font-size: 6vw; }
+  .blog-header .hero .hero-body .title,
+  .blog-header .hero .hero-body .subtitle {
+    text-align: center;
+    font-family: "Rozha One", serif;
+    font-weight: 400; }
+  .blog-header .has-text-primary {
+    color: #40d59f !important; }
+
+@media (min-width: 544px) {
+  .home-header .hero .hero-body .title {
+    font-size: 8vw; }
+  .home-header .hero .hero-body .subtitle {
+    width: 70%;
+    font-size: 4vw; } }
+
+@media (min-width: 768px) {
+  .blog-header .hero .hero-body .title {
+    font-size: 6vw; }
+  .blog-header .hero .hero-body .subtitle {
+    width: 50%;
+    margin: 0 auto 20px auto;
+    font-size: 2.5vw; } }
+
 .footer {
   padding-top: 7.35rem;
   color: white;

@@ -4,7 +4,7 @@ import Section from "../../components/Section/Section";
 import SectionTitle from "../../components/Section/SectionTile";
 import ProjectsList from "../../components/ProjectsList";
 
-const Projects = props => (
+const Projects =({ projects }) => (
   <div>
     <Section
       backgroundColor="bg-section-color-white"
@@ -23,7 +23,7 @@ const Projects = props => (
       />
 
       <div className="row-m">
-        <ProjectsList projects={props.projects} />
+        <ProjectsList projects={projects} />
       </div>
     </Section>
   </div>

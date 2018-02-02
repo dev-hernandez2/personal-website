@@ -1,18 +1,11 @@
 import React, {Component} from 'react'
 import { Helmet } from "react-helmet";
 
-import { mediumRssJson } from '../../services/api/Medium';
+
 
 import TopHeader from "../../components/TopHeader";
 
 class Blog extends Component {
-    state = {
-        post: []
-      }
-
-      componentDidMount() {
-        this.setState({ post: mediumRssJson })
-      }
 
     render() {
         return (
@@ -23,7 +16,7 @@ class Blog extends Component {
               <meta name="description" content="Hernandez2.com" />
             </Helmet>
     
-            <div className="home-header">
+            <div className="blog-header">
                 <div className=" has-text-centered">
                     <TopHeader
                         title="The Great Adventures of a Full Stack Developer"
@@ -39,9 +32,6 @@ class Blog extends Component {
                         }
                     />
                 </div>
-                {
-                    console.log(this.state.post)
-                }
             </div>
           </div>
         )
