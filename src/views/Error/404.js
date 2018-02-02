@@ -2,14 +2,23 @@ import React from "react";
 import Header from '../../components/TopHeader';
 import NotFoundImage from "../../assets/img/Error404.jpg";
 
-const fullBackgroun = {
+//inline styles
+const styles = {
+
+  fullBackgroun: {
     background: `url(${NotFoundImage}) no-repeat center center`,
     backgroundSize: 'cover'
+  },
+
+  mainTextWhite: {
+    color: 'white'
+  }
+   
 }
 
 const NotFound = () => (
   <div className="animated fadeIn">
-    <div className="home-header" style={fullBackgroun}>
+    <div className="home-header" style={styles.fullBackgroun}>
       <div className=" has-text-centered">
         <Header
           title={
@@ -18,7 +27,7 @@ const NotFound = () => (
             </strong>
           }
           subTitle={
-            <div>
+            <div style={styles.mainTextWhite}>
               Some times adventures take you to
               unknown places...
             </div>
