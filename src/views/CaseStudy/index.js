@@ -17,7 +17,7 @@ class Project extends Component {
     
         return (
             <div className="animated fadeIn">
-               { project.company }
+               { project.mission }
             </div>
         )
     }
