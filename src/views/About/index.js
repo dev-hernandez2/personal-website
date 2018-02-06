@@ -8,6 +8,20 @@ import ImagesList from "../../components/ImagesList";
 //instagram API Call Component
 import callInstagramApi from "../../services/api/Instagram";
 
+import williamAbout from "../../assets/img/About-Photo-H2.jpg";
+
+//inline styles
+const styles = {
+
+  fullBackgroun: {
+    background: `url(${williamAbout}) no-repeat center center`,
+    backgroundSize: 'cover'
+  },
+  mainTextWhite: {
+    color: 'white'
+  }
+   
+}
 
 class About extends Component {
   state = {
@@ -19,7 +33,7 @@ class About extends Component {
       callInstagramApi()
       .then(res => this.setState({ response: res.data }))
       .catch(err => console.log(err));
-     }, 3000);
+     }, 2000);
   }
 
   render() {
@@ -31,10 +45,10 @@ class About extends Component {
           <meta name="description" content="Hernandez2.com" />
         </Helmet>
 
-        <div className="header">
+        <div className="header" style={styles.fullBackgroun}>
           <TopHeader
             title={
-              <div>
+              <div style={styles.mainTextWhite}>
                 <p>I'm William</p>
                 <p>a Full Stack</p>
                 <strong className="has-text-primary"> Adventurer</strong>

@@ -248,6 +248,10 @@ p.regular {
     margin: 3rem 0;
     color: #2e3c40;
     font-size: 1.5em; }
+  .about-body p.white-regular {
+    margin: 3rem 0;
+    color: white;
+    font-size: 1.5em; }
   .about-body .skills h2 {
     font-size: 1.5em; }
   .about-body .skills p.regular {

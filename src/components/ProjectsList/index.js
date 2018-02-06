@@ -4,8 +4,6 @@ import Row from "../Grids/Row";
 import Column from "../Grids/Column";
 import Button from "../Button";
 
-//test img
-import images from "../../assets/img/dummy.jpg";
 
 const ProjectsList = ({projects}) => {
   return projects.map(project => {
@@ -17,7 +15,7 @@ const ProjectsList = ({projects}) => {
               if (project.short.position === "left") {
                 return (
                   <Column>
-                    <img className="" src={images} alt="" />
+                    <img className="" src={project.short.image} alt="" />
                   </Column>
                 );
               }
@@ -29,15 +27,15 @@ const ProjectsList = ({projects}) => {
               <Button
                 color=" is-primary btn-project hvr-shadow"
                 type="link"
-                href={"/project/" + project.id }
-                text="See Case Study"
+                href={ (project.iscase) ? `/project/${project.id}` : project.webpage}
+                text={(project.iscase) ? "See Case Study" : "See webpage"}
               />
             </Column>
             {(() => {
               if (project.short.position === "right") {
                 return (
                   <Column>
-                    <img className="" src={images} alt="" />
+                    <img className="" src={project.short.image} alt="" />
                   </Column>
                 );
               }
