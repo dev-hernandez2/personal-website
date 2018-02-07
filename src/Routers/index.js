@@ -22,6 +22,7 @@ const Routers = () => (
         <Route path='/project/:id' component={Project}/>
         <Route path="/about" component={About} />
         <Route path="/blog" component={Blog} />
+        <Route path="/404" component={Error404} />
         <Route component={Error404} />
       </Switch>
       <Footer />

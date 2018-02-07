@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 
 import TopHeader from "../../components/TopHeader";
 import Section from "../../components/Section/Section";
 import SectionTitle from "../../components/Section/SectionTile";
+import Button from "../../components/Button";
 
 import projectsData from "../../services/data/projects";
 
@@ -63,11 +64,13 @@ class Project extends Component {
           />
 
           <div className="row-m about-body">
-            <h4>The Mission</h4>
+            <h4 className="is-case-h">The Mission</h4>
             <p className="regular">{project.mission02}</p>
             <p className="regular">{project.mission01}</p>
 
-            <img src={project.missionImg} alt={project.company} />
+            <div className="is-center-img">
+              <img src={project.missionImg} alt={project.company} />
+            </div>
           </div>
         </Section>
         <Section
@@ -81,11 +84,13 @@ class Project extends Component {
           textColor="bgtextSection"
         >
           <div className="row-m about-body">
-            <h4 className="color-white">The Mission</h4>
+            <h4 className="color-white is-case-h">The Mission</h4>
             <p className="white-regular">{project.mission02}</p>
             <p className="white-regular">{project.mission01}</p>
 
-            <img src={project.missionImg} alt={project.company} />
+            <div className="is-center-img">
+              <img src={project.missionImg} alt={project.company} />
+            </div>
           </div>
         </Section>
         <Section
@@ -99,11 +104,27 @@ class Project extends Component {
           }
           textColor="bgtextSectionContact"
         >
-          <div className="row-m about-body">
-            <h4 className="">The Stack</h4>
+          <div className="row-m about-body ">
+            <h4 className="is-case-h">The Stack</h4>
             <p className="regular">{project.mission02}</p>
-
-            <img src={project.missionImg} alt={project.company} />
+            <div className="is-center-img">
+              <img src={project.missionImg} alt={project.company} />
+            </div>
+          </div>
+        </Section>
+        <Section backgroundColor="bg-section-color-white">
+          <div className="row-m about-body">
+            <h4 className="is-case-h">The Mission</h4>
+            <p className="regular">{project.mission02}</p>
+            <p className="regular">{project.mission01}</p>
+          </div>
+          <div className="is-center-img">
+            <Button
+              color="is-primary is-medium btn-project hvr-shadow"
+              type="link"
+              href={project.webpage}
+              text="See webpage"
+            />
           </div>
         </Section>
       </div>
