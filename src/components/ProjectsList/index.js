@@ -27,8 +27,8 @@ const ProjectsList = ({projects}) => {
               <Button
                 color=" is-primary btn-project hvr-shadow"
                 type="link"
-                href={ (project.iscase) ? `/project/${project.id}` : project.webpage}
-                text={(project.iscase) ? "See Case Study" : "See webpage"}
+                href={`/project/${project.id}`}
+                text={(project.isCase) ? "See Case Study" : "See Project"}
               />
             </Column>
             {(() => {

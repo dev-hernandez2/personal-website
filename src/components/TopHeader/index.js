@@ -17,7 +17,7 @@ const TopHeader = props => {
     }
   };
     return (
-      <section className="hero">
+      <header className="hero">
         <div className="hero-body">
           <div className="container">
             <h1 className="title">{props.title}</h1>
@@ -25,7 +25,7 @@ const TopHeader = props => {
             {buttonElement(props)}
           </div>
         </div>
-      </section>
+      </header>
     );
 }
 
