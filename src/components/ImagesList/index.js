@@ -20,10 +20,14 @@ const ImagesList = ({media}) => (
     <Section>
       {(media.length > 0)
         ? <Row display="is-multiline">
-            {media.map((media, i) => (<ImgItem
-              key={i}
-              mediaSrc={media.images.standard_resolution.url}
-              mediaAlt={media.caption.text}/>))}
+            {media.map((media, i) => (
+              <ImgItem
+                key={i}
+                mediaSrc={media.images.standard_resolution.url}
+                mediaAlt={media.caption.text}
+                mediaLink={media.link}
+              />
+            ))}
           </Row>
         : <Spinner name="ball-scale-multiple" color="aquamarine"/>
       }   

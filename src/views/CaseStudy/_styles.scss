@@ -1,15 +1,34 @@
 .is-center-img {
+    img {
+        display: block;
+        align-content: center;
+        width: 100%;
+        height: auto;
+    }
+}
+.is-center-element {
+    height: 100%;
+    padding: 0;
+    margin: 40px 0;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    align-items: center;
     justify-content: center;
-    /* align horizontal */
 }
 
 .is-case-h {
     font-weight: 600;
     font-size: 1.5em;
     margin-left: 40px;
+}
+
+.leyer-cake {
+    margin-bottom: -300px;
+}
+
+.big-block {
+    padding-bottom: 30px;
 }

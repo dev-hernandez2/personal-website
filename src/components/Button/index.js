@@ -7,6 +7,7 @@ const Button = ({type, href, color, text}) => {
         <a
           href={href ? href : ""}
           className={"button " + (color ? color : "")}
+          target="_black"
         >
           {text ? text : "Link"}
         </a>

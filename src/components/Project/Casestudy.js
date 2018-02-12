@@ -48,7 +48,7 @@ const CaseStudy = ({project}) => (
                     <p className="white-regular">{project.research}</p>
 
                     <div className="is-center-img">
-                        <img src={project.missionImg} alt={project.company} />
+                        <img src={project.researchImg} alt={project.company} />
                     </div>
                 </div>
             </Section>
@@ -68,7 +68,7 @@ const CaseStudy = ({project}) => (
                 <p className="regular">{project.stack}</p>
                 <p className="regular"><strong>The stack used on this project where:</strong>{project.stackUse}</p>
                 <div className="is-center-img">
-                    <img src={project.missionImg} alt={project.company} />
+                    <img src={project.stackImg} alt={project.company} />
                 </div>
             </div>
             </Section>
@@ -78,7 +78,7 @@ const CaseStudy = ({project}) => (
                 <p className="regular">{project.endProduct01}</p>
                 <p className="regular">{project.endProduct02}</p>
             </div>
-            <div className="is-center-img">
+            <div className="is-center-element">
                 <Button
                     color="is-primary is-medium btn-project hvr-shadow"
                     type="link"

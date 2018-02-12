@@ -29,11 +29,11 @@ class About extends Component {
   };
 
   componentDidMount() {
-    setInterval( () => { 
+   
       callInstagramApi()
       .then(res => this.setState({ response: res.data }))
       .catch(err => console.log(err));
-     }, 2000);
+    
   }
 
   render() {

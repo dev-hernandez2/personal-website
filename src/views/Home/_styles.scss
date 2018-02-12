@@ -144,6 +144,7 @@
         color: $typeColor;
         font-family: "Barlow", sans-serif;
       }
+     
       h3 {
         font-weight: 900;
         font-size: 1.5em;
@@ -200,4 +201,11 @@
 
 p.regular {
   font-size: 1.3em;
+}
+.img-block {
+    padding: 0 10%;
+    img {
+      display: block;
+      width: 100%;
+    }
 }

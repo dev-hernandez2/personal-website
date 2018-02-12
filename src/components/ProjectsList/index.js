@@ -14,8 +14,10 @@ const ProjectsList = ({projects}) => {
             {(() => {
               if (project.short.position === "left") {
                 return (
-                  <Column>
-                    <img className="" src={project.short.image} alt="" />
+                  <Column className="img-block">
+                    <div className="img-block">
+                      <img  src={project.short.image} alt="" />
+                    </div>
                   </Column>
                 );
               }
@@ -28,14 +30,16 @@ const ProjectsList = ({projects}) => {
                 color=" is-primary btn-project hvr-shadow"
                 type="link"
                 href={`/project/${project.id}`}
-                text={(project.isCase) ? "See Case Study" : "See Project"}
+                text={(project.isCase) ? "View Case Study" : "View Project"}
               />
             </Column>
             {(() => {
               if (project.short.position === "right") {
                 return (
-                  <Column>
-                    <img className="" src={project.short.image} alt="" />
+                  <Column >
+                    <div className="img-block">
+                      <img  src={project.short.image} alt="" />
+                    </div>
                   </Column>
                 );
               }

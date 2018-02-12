@@ -7,6 +7,8 @@ import projectsData from "../../services/data/projects";
 import CaseStudy from "../../components/Project/Casestudy";
 import ProjectRegular from "../../components/Project/Project";
 
+
+
 class Project extends Component {
   state = {
     project: [],
@@ -20,7 +22,13 @@ class Project extends Component {
   }
 
   render() {
+   
     const project = (this.state.project  !== undefined ) ? this.state.project : window.location.href = "/404";
+    const fullBackground = {
+        background: `url(${project.headerImg}) center center / cover no-repeat `,
+    };
+
+
 
     return (
       <div className="animated fadeIn">
@@ -30,14 +38,15 @@ class Project extends Component {
           <meta name="description" content="Hernandez2.com" />
         </Helmet>
 
-        <div className="header">
+        <div className="header" style={{...fullBackground}} >
           <TopHeader
             title={
-              <div>
+              <div style={{color: 'white'}}>
                 <p>{project.title}</p>
                 <strong className="has-text-primary">{project.company}</strong>
               </div>
             }
+            
           />
         </div>
         {(() => {

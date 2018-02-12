@@ -87,19 +87,34 @@ body {
   .instagram-gallery .section.is-light-section {
     background: #f7f7f6; }
 
-.is-center-img {
+.is-center-img img {
+  display: block;
+  align-content: center;
+  width: 100%;
+  height: auto; }
+
+.is-center-element {
+  height: 100%;
+  padding: 0;
+  margin: 40px 0;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  justify-content: center;
-  /* align horizontal */ }
+  align-items: center;
+  justify-content: center; }
 
 .is-case-h {
   font-weight: 600;
   font-size: 1.5em;
   margin-left: 40px; }
+
+.leyer-cake {
+  margin-bottom: -300px; }
+
+.big-block {
+  padding-bottom: 30px; }
 
 .home-header {
   padding: 40px 0; }
@@ -236,6 +251,12 @@ body {
 
 p.regular {
   font-size: 1.3em; }
+
+.img-block {
+  padding: 0 10%; }
+  .img-block img {
+    display: block;
+    width: 100%; }
 
 .header {
   padding: 40px 0; }
