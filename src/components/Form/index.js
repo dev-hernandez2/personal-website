@@ -11,6 +11,7 @@ const Form = ({action, method}) => (
         placeholder="Put your Email"
         inputDisplay="input"
         inputType="text"
+        imputName="email"
       />
 
       <Field
@@ -18,11 +19,13 @@ const Form = ({action, method}) => (
         placeholder="Put your Name"
         inputDisplay="input"
         inputType="text"
+        imputName="name"
       />
       <Field
         label="Message"
         placeholder="10 lines of textarea"
         inputDisplay="textarea"
+        imputName="massage"
       />
 
       <div className="control">

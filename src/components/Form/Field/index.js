@@ -1,6 +1,6 @@
 import React from "react";
 
-const Field = ({label, inputDisplay, inputId, placeholder, inputType}) => (
+const Field = ({label, inputDisplay, inputId, placeholder, inputType, imputName}) => (
   <div className="field">
     <label className="label">{label}</label>
     <div className="control">
@@ -12,6 +12,7 @@ const Field = ({label, inputDisplay, inputId, placeholder, inputType}) => (
               id={inputId}
               placeholder={placeholder}
               rows="10"
+              name={imputName}
             />
           );
         } else {
@@ -21,6 +22,7 @@ const Field = ({label, inputDisplay, inputId, placeholder, inputType}) => (
               id={inputId}
               type={inputType}
               placeholder={placeholder}
+              name={imputName}
             />
           );
         }
