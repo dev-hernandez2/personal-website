@@ -9,17 +9,17 @@ const Footer = () => (
       <div className="content has-text-centered">
         <Row>
           <Column>
-            <a href="/#" target="_black">
+            <a href="https://github.com/dev-hernandez2" target="_black">
               Github
             </a>
           </Column>
           <Column>
-            <a href="/#" target="_black">
+            <a href="https://www.linkedin.com/in/dev-hernandez2/" target="_black">
               Linkedin
             </a>
           </Column>
           <Column>
-            <a href="/#" target="_black">
+            <a href="https://twitter.com/dev_hernandez2" target="_black">
               Twitter
             </a>
           </Column>

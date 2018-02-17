@@ -1,0 +1,42 @@
+.gradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00335d+0,00335d+100&0.65+1,0+100 */
+    background: -moz-linear-gradient(left, rgba(0, 51, 93, 3) 0%, rgba(0, 51, 93, 3) 1%, rgba(0, 51, 93, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0, 51, 93, 3) 0%, rgba(0, 51, 93, 3) 1%, rgba(0, 51, 93, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0, 51, 93, 3) 0%, rgba(0, 51, 93, 3) 1%, rgba(0, 51, 93, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a600335d', endColorstr='#0000335d', GradientType=1);
+    /* IE6-9 */
+}
+
+.blog-post {
+    width: 100%;
+    .blog-post-container {
+        height: 100%;
+        padding: 45px;
+    }
+    header {
+        width: 100%;
+    }
+    .blog-post-title {
+        font-size: 8vw;
+        font-family: "Rozha One", serif;
+        color: white;
+        line-height: 3rem;
+    }
+    @media (min-width: 544px) {
+        .blog-post-title {
+            font-size: 7vw;
+        }
+    }
+    @media (min-width: 768px) {
+        header {
+            width: 50%;
+        }
+        .blog-post-title {
+            font-size: 6vw;
+            line-height: 5rem;
+        }
+    }
+}

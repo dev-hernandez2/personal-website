@@ -15,15 +15,23 @@
 @import "../../components/Contact/_styles";
 //instagram media styles 
 @import "../../components/ImagesList/_styles";
-//casestudy 
-@import "../../views/CaseStudy/_styles";
+//blog posts
+@import "../../components/blogPost/_styles";
+
+
 
 
 //pages componen styles
 //homes
 @import "../../views/Home/_styles";
+//about
 @import "../../views/About/_styles";
+//casestudy 
+@import "../../views/CaseStudy/_styles";
+//blog
 @import "../../views/Blog/_styles";
+//error page
 @import "../../views/Error/_styles";
 
+//footer
 @import "../../components/Footer/_styles";

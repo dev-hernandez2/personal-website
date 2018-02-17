@@ -87,34 +87,38 @@ body {
   .instagram-gallery .section.is-light-section {
     background: #f7f7f6; }
 
-.is-center-img img {
-  display: block;
-  align-content: center;
-  width: 100%;
-  height: auto; }
+.gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00335d+0,00335d+100&0.65+1,0+100 */
+  background: -moz-linear-gradient(left, #00335d 0%, #00335d 1%, rgba(0, 51, 93, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #00335d 0%, #00335d 1%, rgba(0, 51, 93, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #00335d 0%, #00335d 1%, rgba(0, 51, 93, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a600335d', endColorstr='#0000335d', GradientType=1);
+  /* IE6-9 */ }
 
-.is-center-element {
-  height: 100%;
-  padding: 0;
-  margin: 40px 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.is-case-h {
-  font-weight: 600;
-  font-size: 1.5em;
-  margin-left: 40px; }
-
-.leyer-cake {
-  margin-bottom: -300px; }
-
-.big-block {
-  padding-bottom: 30px; }
+.blog-post {
+  width: 100%; }
+  .blog-post .blog-post-container {
+    height: 100%;
+    padding: 45px; }
+  .blog-post header {
+    width: 100%; }
+  .blog-post .blog-post-title {
+    font-size: 8vw;
+    font-family: "Rozha One", serif;
+    color: white;
+    line-height: 3rem; }
+  @media (min-width: 544px) {
+    .blog-post .blog-post-title {
+      font-size: 7vw; } }
+  @media (min-width: 768px) {
+    .blog-post header {
+      width: 50%; }
+    .blog-post .blog-post-title {
+      font-size: 6vw;
+      line-height: 5rem; } }
 
 .home-header {
   padding: 40px 0; }
@@ -292,6 +296,35 @@ p.regular {
   .about-body .skills p.regular {
     margin: 1rem 0;
     font-size: 1.3em; }
+
+.is-center-img img {
+  display: block;
+  align-content: center;
+  width: 100%;
+  height: auto; }
+
+.is-center-element {
+  height: 100%;
+  padding: 0;
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.is-case-h {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-left: 40px; }
+
+.leyer-cake {
+  margin-bottom: -300px; }
+
+.big-block {
+  padding-bottom: 30px; }
 
 .blog-header {
   padding: 40px 0; }

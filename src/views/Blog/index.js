@@ -1,13 +1,25 @@
 import React, {Component} from 'react'
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet'
+
+import BlogPosts from '../../services/data/blogPost'
+import Post from '../../components/blogPost'
 
 
 
-import TopHeader from "../../components/TopHeader";
+import TopHeader from '../../components/TopHeader'
 
 class Blog extends Component {
-
-    render() {
+    state = {
+        posts: []
+      };
+    
+      componentDidMount() {
+        this.setState({
+          posts: BlogPosts
+        });
+      }
+    render() {  
+        const posts = this.state.posts   
         return (
             <div className="animated fadeIn">
             <Helmet>
@@ -33,8 +45,15 @@ class Blog extends Component {
                     />
                 </div>
             </div>
+     
+                {
+                    posts.map(post => (
+                        <Post post={post} key={post.id} />
+                    ))
+                }
+         
           </div>
         )
     }
 }
-export default Blog;
+export default Blog
