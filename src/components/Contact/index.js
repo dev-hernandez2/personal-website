@@ -11,51 +11,61 @@ import Button from "../../components/Button";
 class Contact extends Component {
   state = {
     email:'',
+    emailError: '',
     name: '',
-    massage: '',
+    nameError: '',
+    message: '',
+    messageError: '',
     response: '',
     isMailSent: false,
-    errors: {
-      email: false,
-      name: false,
-      massage: false
-    },
-    isDisabled: false
   }
 
-  isValidEmail = email => {
+  isValid = email => {
     if (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(email)) { return true }
+  }
+
+  
+  validate = () => {
+    let isError = false;
+    const errors = {};
+    const { name, email, message} = this.state;
+
+    if(this.isValid(email)) {
+      isError = true;
+      errors.emailError = "Need to be a valid email";
+    }
+    if(email.length <= 0) {
+      isError = true;
+      errors.emailError = "Email is required";
+    }
+
+    if(name.length <= 0) {
+      isError = true;
+      errors.nameError = "Name is required";
+    }
+
+    if(message.length <= 0) {
+      isError = true;
+      errors.messageError = "Message is required";
+    }
+
+    if(isError) {
+      this.setState({
+        ...this.state,
+        ...errors
+      })
+    }
+
+    return isError;
   }
 
   cleanForm = () => { 
     document.getElementById("Contactform").reset();
-  }
-
-  handleEmailChange = email => {
-    if(this.isValidEmail(email.target.value)){
-
-      this.setState({ 
-        email: email.target.value,
-        errors: {
-          email: false,
-        },
-        isDisabled: false
-     });
-      console.log(this.state.errors);
-    } else {
-
-      this.setState({ 
-        errors: {
-          email: true,
-        },
-        isDisabled: true
-     });
-     this.setState({ 
-      email: email.target.value,
-   });
-    console.log(this.state.email);
-     console.log(this.state.errors);
-    }
+    this.setState({
+      emailError: '',
+      nameError: '',
+      messageError: '',
+    });
   }
 
   handleInputChange = event => {
@@ -63,53 +73,45 @@ class Contact extends Component {
     const target = event.target;
     const value = target.value;
     const name = target.name;
-    if(value) {
+ 
       this.setState({
-        [name]: value,
-          errors: {
-            [name]: false
-          },
-          isDisabled: false
+        [name]: value
       });
-    }else {
-        this.setState({ 
-          errors: {
-            [name]: true
-          },
-          isDisabled: true
-      });
-    }
+ 
 
   }
 
   handleSubmit = event => {
     event.preventDefault();
 
-    const { name, email, massage,  isDisabled } = this.state;
+    const { name, email, message} = this.state;
 
     const params = new URLSearchParams();
     params.append('name', name);
+    params.append('email', email);
+    params.append('message', message);
 
-    if(isDisabled) {
-      // axios.post('http://localhost/contact-post/', params)
-      // .then(response => {
-      //   this.setState({response: response.data,  isMailSent: true });
-      //   console.log(response.data);
-      // })
-      // .catch(error => {
-      //   console.log(error);
-      // });
-      // this.cleanForm();
-      console.log(name, email, massage);
+    const isError = this.validate();
+
+    if(!isError) {
+      axios.post('http://localhost/contact-post/', params)
+      .then(response => {
+        this.setState({response: response.data,  isMailSent: true });
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+
+      this.cleanForm();
+
     } 
    
   }
+  
   render() {
     const classActive = this.state.isMailSent ? "" : "is-invisible";
-    const emailError = this.state.errors.email ? "" : "is-invisible";
-    const nameError = this.state.errors.name ? "" : "is-invisible";
-    const massageError = this.state.errors.massage ? "" : "is-invisible";
-    const formError = this.state.isDisabled ? "" : "is-invisible";
+    const { state } = this;
     return (
       <Section
         backgroundColor="bg-section-color-grey"
@@ -139,9 +141,9 @@ class Contact extends Component {
           <div className="box box-contact">
             
             <form onSubmit={this.handleSubmit.bind(this)} id="Contactform">
-            <p className={"help is-danger " + formError}>Every imput is required</p>
+            <p className="help is-danger ">*Every imput is required</p>
             <div className="field">
-              <label className="label">Name:</label>
+              <label className="label">*Name:</label>
               <div className="control">
                 <input
                 className="input"
@@ -153,10 +155,10 @@ class Contact extends Component {
                 />
               </div>
               
-              <p className={"help is-danger " + nameError}>This Name is required</p>
+              <p className="help is-danger ">{state.nameError}</p>
             </div>
             <div className="field">
-              <label className="label">Email:</label>
+              <label className="label">*Email:</label>
               <div className="control">
                 <input
                   className="input"
@@ -164,28 +166,28 @@ class Contact extends Component {
                   type="email"
                   placeholder="your email"
                   name="email"
-                  onChange={this.handleEmailChange.bind(this)}
+                  onChange={this.handleInputChange.bind(this)}
 
                 />
               </div>
-              <p className={"help is-danger " + emailError}>This email is invalid</p>
+              <p className="help is-danger ">{state.emailError}</p>
             </div>
             <div className="field">
-            <label className="label">Massage:</label>
+            <label className="label">*Message:</label>
               <div className="control">
                 <textarea
                   className="textarea"
-                  id="massage"
-                  placeholder="massage"
+                  id="message"
+                  placeholder="message"
                   rows="10"
-                  name="massage"
+                  name="message"
                   onChange={this.handleInputChange.bind(this)}
                 />
               </div>
-              <p className={"help is-danger " + massageError}>This Massage is required</p>
+              <p className="help is-danger " >{state.messageError}</p>
             </div>
          
-              <h1 className={"has-text-primary is-size-4 has-text-centered " + classActive}>{this.state.response}</h1>
+              <h1 className={"has-text-primary is-size-4 has-text-centered " + classActive}>{state.response}</h1>
          
               <div className="control">
                 <Button
