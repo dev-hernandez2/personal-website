@@ -137,7 +137,7 @@ class Contact extends Component {
           <Column>
           <div className="box box-contact">
             
-            <form onSubmit={this.handleSubmit.bind(this)} id="Contactform">
+            <form onSubmit={this.handleSubmit.bind(this)} id="Contact">
             <p className="help is-danger ">*Every imput is required</p>
             <div className="field">
               <label className="label">*Name:</label>

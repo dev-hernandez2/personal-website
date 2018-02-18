@@ -24,7 +24,7 @@ const Footer = () => (
             </a>
           </Column>
           <Column>
-            <a href="/#" target="_black">
+            <a href="https://s3.us-east-2.amazonaws.com/porfolio-bucket/WilliamHernandez2-CV.pdf" target="_black">
               Download CV
             </a>
           </Column>

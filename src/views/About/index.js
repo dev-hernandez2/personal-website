@@ -56,7 +56,7 @@ class About extends Component {
             }
             HasButton={true}
             buttonStyles="is-primary is-medium hvr-grow-shadow header-btn"
-            buttonHref="#Contanct"
+            buttonHref="/#Contact"
             buttonText="Send Masagge"
           />
         </div>

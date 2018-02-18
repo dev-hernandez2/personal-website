@@ -40,7 +40,7 @@ class Home extends Component {
               }
               HasButton={true}
               buttonStyles="is-primary is-medium hvr-grow-shadow"
-              buttonHref="#Contanct"
+              buttonHref="#Contact"
               buttonText="Available for hire"
             />
           </div>
