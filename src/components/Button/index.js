@@ -1,13 +1,13 @@
 import React from "react";
 
-const Button = ({type, href, color, text}) => {
+const Button = ({type, href, color, text, target}) => {
   const buttonElement = props => {
     if (type === "link") {
       return (
         <a
           href={href ? href : ""}
           className={"button " + (color ? color : "")}
-          target="_black"
+          target={(target === 'new' ? "_black" : "_self")}
         >
           {text ? text : "Link"}
         </a>

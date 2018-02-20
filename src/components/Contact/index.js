@@ -18,6 +18,7 @@ class Contact extends Component {
     messageError: '',
     response: '',
     isMailSent: false,
+    mainError: ''
   }
 
   isValid = email => {
@@ -33,26 +34,32 @@ class Contact extends Component {
     if(this.isValid(email)) {
       isError = true;
       errors.emailError = "Need to be a valid email";
+   
     }
     if(email.length <= 0) {
       isError = true;
       errors.emailError = "Email is required";
+    
     }
 
     if(name.length <= 0) {
       isError = true;
       errors.nameError = "Name is required";
+
     }
 
     if(message.length <= 0) {
       isError = true;
       errors.messageError = "Message is required";
+     
     }
 
     if(isError) {
       this.setState({
         ...this.state,
-        ...errors
+        ...errors,
+        mainError: '*Every imput is required'
+
       })
     }
 
@@ -65,6 +72,7 @@ class Contact extends Component {
       emailError: '',
       nameError: '',
       messageError: '',
+      mainError: false
     });
   }
 
@@ -138,7 +146,7 @@ class Contact extends Component {
           <div className="box box-contact">
             
             <form onSubmit={this.handleSubmit.bind(this)} id="Contact">
-            <p className="help is-danger ">*Every imput is required</p>
+            <p className="help is-danger ">{state.mainError}</p>
             <div className="field">
               <label className="label">*Name:</label>
               <div className="control">
@@ -146,7 +154,7 @@ class Contact extends Component {
                 className="input"
                 id="name"
                 type="text"
-                placeholder="yourname"
+                placeholder="Your name"
                 name="name"
                 onChange={this.handleInputChange.bind(this)}
                 />
@@ -161,7 +169,7 @@ class Contact extends Component {
                   className="input"
                   id="email"
                   type="email"
-                  placeholder="your email"
+                  placeholder="Your email"
                   name="email"
                   onChange={this.handleInputChange.bind(this)}
 
@@ -175,7 +183,7 @@ class Contact extends Component {
                 <textarea
                   className="textarea"
                   id="message"
-                  placeholder="message"
+                  placeholder="Your message"
                   rows="10"
                   name="message"
                   onChange={this.handleInputChange.bind(this)}

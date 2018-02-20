@@ -31,7 +31,7 @@ class Home extends Component {
               title="Hello, world"
               subTitle={
                 <div>
-                  My name is William Hernandez and I am a,
+                  My name is William Hernandez and I am a
                   <strong className="has-text-primary">
                     {" "}
                     Full Stack Developer

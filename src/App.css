@@ -46,15 +46,15 @@ body {
     z-index: -2;
     font-family: "Rozha One", serif;
     font-weight: 900;
-    font-size: 9em; }
+    font-size: 7em; }
     .section-area .section-bg-text p:nth-child(2),
     .section-area .section-bg-text p:nth-child(3) {
-      margin-top: -100px; }
+      margin-top: -80px; }
 
 @media (min-width: 768px) {
   .section-area .section-bg-text {
     font-size: 12em; }
-    .section-area .section-bg-text p:last-child {
+    .section-area .section-bg-text p:last-child, .section-area .section-bg-text p:nth-last-child(2) {
       margin-top: -100px; } }
 
 .box-contact {
@@ -303,6 +303,10 @@ p.regular {
   width: 100%;
   height: auto; }
 
+.is-center-img .last-image {
+  width: 70%;
+  margin: 0 auto; }
+
 .is-center-element {
   height: 100%;
   padding: 0;
@@ -329,7 +333,7 @@ p.regular {
 .blog-header {
   padding: 40px 0; }
   .blog-header .hero .hero-body .title {
-    font-size: 10vw; }
+    font-size: 8vw; }
   .blog-header .hero .hero-body .subtitle {
     width: 90%;
     margin: 0 auto 20px auto;
@@ -344,14 +348,14 @@ p.regular {
 
 @media (min-width: 544px) {
   .home-header .hero .hero-body .title {
-    font-size: 8vw; }
+    font-size: 6vw; }
   .home-header .hero .hero-body .subtitle {
     width: 70%;
     font-size: 4vw; } }
 
 @media (min-width: 768px) {
   .blog-header .hero .hero-body .title {
-    font-size: 6vw; }
+    font-size: 4vw; }
   .blog-header .hero .hero-body .subtitle {
     width: 50%;
     margin: 0 auto 20px auto;
@@ -367,8 +371,13 @@ p.regular {
     font-weight: 400;
     font-size: 1.4em; }
   .footer .terms-policy {
-    margin-top: 100px;
+    margin-top: 40px;
     margin-bottom: -60px; }
     .footer .terms-policy a {
       font-size: 1em;
       font-family: "Barlow", sans-serif; }
+
+@media (min-width: 768px) {
+  .footer .terms-policy {
+    margin-top: 100px;
+    margin-bottom: -60px; } }

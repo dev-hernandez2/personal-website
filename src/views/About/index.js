@@ -79,13 +79,13 @@ class About extends Component {
           <div className="row-m about-body">
             <p className="regular">
               I work across concept design, UX Development and Server Site
-              Development to deliver custom Digital Products that resolve real
+              Development to deliver custom Digital Products that solve real
               life dilemmas. I love building Digital Products from start to
-              fnish, and been doing so for the last eight years.
+              fnish, and been doing so for the last seven years.
             </p>
             <p className="regular">
               With a background in Fine Arts, design has shown to be an
-              extension of who I am. Having experiences in both felds has
+              extension of who I am. Having experiences in both fields has
               allowed me to excel in my professional life. I love great
               challenges and am always willing to learn new things, is all just
               part of my adventurous journey.

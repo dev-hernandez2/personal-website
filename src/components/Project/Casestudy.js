@@ -37,8 +37,8 @@ const CaseStudy = ({project}) => (
             backgroundColor="bg-section-color-blue"
             textBg={
                 <div>
-                    <p> How</p>
-                    <p> Do It</p>
+                    <p> How I</p>
+                    <p>Did It</p>
                 </div>
             }
             textColor="bgtextSection"
@@ -58,12 +58,12 @@ const CaseStudy = ({project}) => (
                 <div>
                     <p>What</p>
                     <p>They</p>
-                    <p>get</p>
+                    <p>Got</p>
                 </div>
             }
             textColor="bgtextSectionContact"
             >
-            <div className="row-m about-body ">
+            <div className="row about-body ">
                 <h4 className="is-case-h">The Stack</h4>
                 <p className="regular">{project.stack}</p>
                 <p className="regular"><strong>The stack used on this project where:</strong>{project.stackUse}</p>
@@ -73,7 +73,7 @@ const CaseStudy = ({project}) => (
             </div>
             </Section>
             <Section backgroundColor="bg-section-color-white">
-            <div className="row-m about-body">
+            <div className="row about-body">
                 <h4 className="is-case-h">The End Product</h4>
                 <p className="regular">{project.endProduct01}</p>
                 <p className="regular">{project.endProduct02}</p>
@@ -83,7 +83,8 @@ const CaseStudy = ({project}) => (
                     color="is-primary is-medium btn-project hvr-shadow"
                     type="link"
                     href={project.webpage}
-                    text="See webpage"
+                    text="View website"
+                    target='new'
                 />
             </div>
         </Section>

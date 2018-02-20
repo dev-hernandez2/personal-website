@@ -22,7 +22,7 @@ const Projects =({ projects }) => (
         topLineColor="top-primary"
       />
 
-      <div className="row-m">
+      <div className="">
         <ProjectsList projects={projects} />
       </div>
     </Section>

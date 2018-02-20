@@ -3,6 +3,9 @@ import React from "react";
 import Row from "../Grids/Row";
 import Column from "../Grids/Column";
 
+
+const fullYear = new Date().getFullYear();
+
 const Footer = () => (
   <footer className="footer">
     <div className="container">
@@ -32,8 +35,8 @@ const Footer = () => (
         <Row>
           <Column size="is-11 is-offset-1">
             <div className="terms-policy">
-              <p>2017 Hernandez2. All rights reserved.</p>
-              <a className="policy-link" href="/#" target="_black">
+              <p>Copyright ©{fullYear} Hernandez2. All Rights Reserved.</p>
+              <a className="policy-link" href="/terms-and-use">
                 Terms of Use & Privacy Policy
               </a>
             </div>

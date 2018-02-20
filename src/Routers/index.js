@@ -10,6 +10,7 @@ import Home from "../views/Home";
 import Project from "../views/CaseStudy";
 import About from "../views/About";
 import Blog from "../views/Blog";
+import TermsAndUse from "../views/Terms";
 import Error404 from "../views/Error/404";
 
 
@@ -22,6 +23,7 @@ const Routers = () => (
         <Route path='/project/:id' component={Project}/>
         <Route path="/about" component={About} />
         <Route path="/blog" component={Blog} />
+        <Route path="/terms-and-use" component={TermsAndUse} />
         <Route path="/404" component={Error404} />
         <Route component={Error404} />
       </Switch>

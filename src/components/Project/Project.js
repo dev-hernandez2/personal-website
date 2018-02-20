@@ -49,14 +49,17 @@ const Project = ({project}) => (
             <p className="regular">{project.solution02}</p>
         </div>
         <div className="is-center-img">
-            <img src={project.solutionImg} alt={project.company} />
+             <div class="last-image">
+                 <img  src={project.solutionImg} alt={project.company} />
+            </div>
         </div>
         <div className="is-center-element">
             <Button
                 color="is-primary is-medium btn-project hvr-shadow"
                 type="link"
                 href={project.webpage}
-                text="View Webpage"
+                text="View Website"
+                target='new'
             />
         </div>
     </Section>
