@@ -99,10 +99,10 @@ class Contact extends Component {
     const isError = this.validate();
 
     if(!isError) {
-      axios.post('http://localhost/contact-post/', params)
+      axios.post('/server/contact/', params)
       .then(response => {
         this.setState({response: response.data,  isMailSent: true });
-        console.log(response.data);
+      
       })
       .catch(error => {
         console.log(error);
@@ -192,7 +192,7 @@ class Contact extends Component {
               <p className="help is-danger " >{state.messageError}</p>
             </div>
          
-              <h1 className={"has-text-primary is-size-4 has-text-centered " + classActive}>{state.response}</h1>
+              <h3 className={"has-text-primary is-size-4 has-text-centered " + classActive}>{state.response}</h3>
          
               <div className="control">
                 <Button

@@ -38,7 +38,7 @@ export default[
         featureImf:'',
         isCase: false,
         webpage:'http://rx30pr.com/',
-        headerImg: 'https://s3.us-east-2.amazonaws.com/porfolio-bucket/Skills-Header.jpg',
+        headerImg: 'https://s3.us-east-2.amazonaws.com/porfolio-bucket/onime-rx30.jpg',
         short : {
             stack: 'Full Stack Developer',
             description: 'Partnering with a leading company to modernize its digital presences and level up its technology stack in order to help pharmacies around Puerto Rico. ',
