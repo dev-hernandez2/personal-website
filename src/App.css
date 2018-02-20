@@ -46,10 +46,10 @@ body {
     z-index: -2;
     font-family: "Rozha One", serif;
     font-weight: 900;
-    font-size: 7em; }
+    font-size: 6em; }
     .section-area .section-bg-text p:nth-child(2),
     .section-area .section-bg-text p:nth-child(3) {
-      margin-top: -80px; }
+      margin-top: -60px; }
 
 @media (min-width: 768px) {
   .section-area .section-bg-text {
@@ -175,18 +175,15 @@ body {
 
 .bgtextSection {
   color: #05233c;
-  left: 30px;
-  top: 80px; }
+  padding: 2%; }
 
 .bgtextSectionProject {
   color: #f3f4f5;
-  left: 30px;
-  top: 100px; }
+  padding: 2%; }
 
 @media (min-width: 768px) {
   .section-area .bgtextSectionProject {
-    left: 30px;
-    top: 110px; }
+    padding: 2%; }
     .section-area .bgtextSectionProject p:last-child {
       margin-top: -100px; } }
 
@@ -210,7 +207,7 @@ body {
   margin: 100px 0 100px 0; }
 
 .section-area .how-do-div .project-info {
-  margin: 50px 0 30px 0; }
+  margin: 30px; }
   .section-area .how-do-div .project-info h3,
   .section-area .how-do-div .project-info h4,
   .section-area .how-do-div .project-info p {
@@ -234,14 +231,21 @@ body {
 
 .section-area .how-do-div img {
   display: none;
-  margin-top: 90px; }
+  margin-top: 0; }
 
 @media (min-width: 768px) {
   .section-area .row-m {
     margin: 100px 0 100px 0; }
+  .section-area .how-do-div .project-info {
+    margin: 50px 0 30px 0; }
   .section-area .how-do-div img {
     display: block;
-    margin-top: 90px; } }
+    margin-top: 90px; }
+  .img-block {
+    padding: 0 10%; }
+    .img-block img {
+      display: block;
+      width: 100%; } }
 
 .bg-section-color-grey {
   background-color: #f7f7f6;
@@ -257,9 +261,9 @@ p.regular {
   font-size: 1.3em; }
 
 .img-block {
-  padding: 0 10%; }
+  padding: 0; }
   .img-block img {
-    display: block;
+    display: none;
     width: 100%; }
 
 .header {
@@ -304,8 +308,13 @@ p.regular {
   height: auto; }
 
 .is-center-img .last-image {
-  width: 70%;
+  width: 100%;
   margin: 0 auto; }
+
+@media (min-width: 768px) {
+  .is-center-img .last-image {
+    width: 70%;
+    margin: 0 auto; } }
 
 .is-center-element {
   height: 100%;
@@ -342,7 +351,7 @@ p.regular {
   .blog-header .hero .hero-body .subtitle {
     text-align: center;
     font-family: "Rozha One", serif;
-    font-weight: 400; }
+    font-weight: 900; }
   .blog-header .has-text-primary {
     color: #40d59f !important; }
 

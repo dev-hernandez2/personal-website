@@ -38,7 +38,7 @@ const CaseStudy = ({project}) => (
             textBg={
                 <div>
                     <p> How I</p>
-                    <p>Did It</p>
+                    <p>Do It</p>
                 </div>
             }
             textColor="bgtextSection"
@@ -83,7 +83,7 @@ const CaseStudy = ({project}) => (
                     color="is-primary is-medium btn-project hvr-shadow"
                     type="link"
                     href={project.webpage}
-                    text="View website"
+                    text="View Website"
                     target='new'
                 />
             </div>

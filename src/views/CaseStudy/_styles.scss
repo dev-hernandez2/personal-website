@@ -6,10 +6,18 @@
         height: auto;
     }
     .last-image {
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
     }
 }
+@media (min-width: 768px) {
+    .is-center-img {
+        .last-image {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+  }
 .is-center-element {
     height: 100%;
     padding: 0;

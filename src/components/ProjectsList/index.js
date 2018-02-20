@@ -8,15 +8,15 @@ import Button from "../Button";
 const ProjectsList = ({projects}) => {
   return projects.map(project => {
     return (
-      <Row key={project.id} display="is-mobile">
-        <Column size="is-12 is-offset-1">
+      <Row key={project.id}>
+        <Column size="">
           <Row display="how-do-div">
             {(() => {
               if (project.short.position === "left") {
                 return (
                   <Column className="img-block">
                     <div className="img-block">
-                      <img  src={project.short.image} alt="" />
+                      <img  src={project.short.image} alt={project.company} />
                     </div>
                   </Column>
                 );
@@ -38,7 +38,7 @@ const ProjectsList = ({projects}) => {
                 return (
                   <Column >
                     <div className="img-block">
-                      <img  src={project.short.image} alt="" />
+                      <img  src={project.short.image} alt={project.company} />
                     </div>
                   </Column>
                 );
