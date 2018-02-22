@@ -1,7 +1,7 @@
 import "whatwg-fetch";
 
 const uriApi =
-  "https://api.instagram.com/v1/users/3813015851/media/recent/?count=8&access_token=3813015851.1677ed0.88fbacc2d47343d1b045e5823a7dbd96";
+  "https://api.instagram.com/v1/users/{USER-ID}/media/recent/?count=8&access_token={TOKEN}";
 
 
 
