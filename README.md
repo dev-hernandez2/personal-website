@@ -1,3 +1,3 @@
 
 
-## Personal website using React.js 
+## Personal website using React
